@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.max-w{
+    @apply max-w-screen-xl mx-auto px-4;
+}
+
+.section-div{
+    @apply max-w font-Jakarta my-20; 
+}
+.btn-primary{
+    @apply bg-secondary font-bold text-primary rounded-full;
+}
+
+.btn-secondary{
+    @apply bg-primary font-bold text-white rounded-full;
+}
+
+.btn-outline{
+    @apply bg-transparent border-2 border-secondary font-bold text-primary duration-200 hover:bg-secondary rounded-full;
+}
+
+.input-field{
+    @apply border-2 rounded-full py-[15px] text-[14px];
+}
