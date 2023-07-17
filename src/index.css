@@ -21,6 +21,19 @@
     @apply bg-transparent border-2 border-secondary font-bold text-primary duration-200 hover:bg-secondary rounded-full;
 }
 
+.btn-primary:active, .btn-secondary:active, .btn-outline:active{
+    @apply duration-200 scale-[0.95];
+}
+
 .input-field{
     @apply border-2 rounded-full py-[15px] text-[14px];
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
 }

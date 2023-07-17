@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Logo } from "./Logo";
 import { SearchField } from "./SearchField";
 
@@ -7,17 +7,17 @@ const Nav = ({ isOpen, setOpen }) => {
     return <nav className={`lg:bg-white w-full py-4 bg-tertiary`}>
         <div className='max-w flex lg:justify-between items-center gap-1 lg:gap-8'>
             <div className="hidden lg:flex items-center justify-between gap-4">
-                <Logo isNav={true} />
+                <Link to='/'><Logo isNav={true} /></Link>
                 <SearchField placeholder={'Paste the URL of the product'} iconColor={'#F2C852'} width={'43'} />
                 <div className="flex items-center gap-2 lg:gap-4">
                     <button className="text-primary text-base">Support</button>
                     <div className='ml-[2.5rem]'>
                         <button className="btn-outline py-[11px] px-[20px]">Login</button>
-                        <button className="btn-secondary py-[11px] px-[20px] hover:animate-wiggle ml-2">Sign Up</button>
+                        <button className="btn-secondary py-[11px] px-[20px] ml-2">Sign Up</button>
                     </div>
                 </div>
             </div>
-            <div className={`lg:hidden flex gap-2 duration-300 ${isOpen ? 'ml-[20rem]' : ''}`}>
+            <div className={`lg:hidden flex items-center gap-2 duration-300 ${isOpen ? 'ml-[20rem]' : ''}`}>
                 <button onBlur={() => setOpen(false)} onClick={() => setOpen(!isOpen)} className="lg:hidden">
                     {
                         !isOpen ? <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +29,7 @@ const Nav = ({ isOpen, setOpen }) => {
                         </svg>
                     }
                 </button>
-                <Logo isNav={true} />
+                <Link to='/'><Logo isNav={true} /></Link>
                 <SearchField placeholder={'Paste the URL of the product'} iconColor={'#F2C852'} width={'43'} />
                 <button className="btn-outline py-[11px] px-[20px]">Login</button>
             </div>
@@ -41,7 +41,7 @@ const Nav = ({ isOpen, setOpen }) => {
             <div className={`h-screen w-5/6 bg-white py-12 px-4 fixed z-50 top-0 duration-300 
             ${!isOpen ? '-ml-96' : ''}`}>
                 <div className="flex items-center gap-2 mb-8">
-                    <Logo isNav={true} />
+                    <Link to='/'><Logo isNav={true} /></Link>
                     <button className="btn-secondary py-[11px] px-[20px]">Log in or Sign up</button>
                 </div>
                 <hr />

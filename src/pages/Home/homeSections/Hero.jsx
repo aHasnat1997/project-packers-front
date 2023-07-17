@@ -3,7 +3,7 @@ import { SearchField } from '../../../components/SearchField';
 
 const Hero = () => {
 
-    return <section className="w-full min-h-[80vh] bg-primary relative z-30 overflow-hidden">
+    return <section className="w-full min-h-[80vh] bg-primary relative z-10 overflow-hidden">
         <div className="max-w h-full lg:flex justify-between">
             <div className='lg:w-[43rem] mt-24'>
                 <h1 className='text-4xl lg:text-[3.25rem] font-bold font-Sora text-white leading-normal'>Shop products from USA and save up to 40%</h1>
@@ -12,7 +12,7 @@ const Hero = () => {
                     <SearchField width={'30'} placeholder={'Paste the URL of the product'} />
                     <button className='btn-primary px-[20px] py-[17px] w-full lg:w-auto mt-2 lg:mt-0'>Create Request</button>
                 </div>
-                <div className='mt-20 hidden lg:flex gap-8 text-white '>
+                <div className='mt-12 hidden lg:flex gap-8 text-white '>
                     <div className='flex gap-2 justify-start'>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17 3.33782C15.5291 2.48697 13.8214 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 11.3151 21.9311 10.6462 21.8 10" stroke="#F2C852" strokeWidth="1.5" strokeLinecap="round" />
@@ -29,10 +29,10 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className='lg:w-1/2'>
+            <div className='lg:w-1/2 lg:mt-12 mb-20'>
                 <img src={image} alt="banner image" />
             </div>
-            <span className='absolute -z-40 top-0 right-[-35rem] w-[100rem] h-[100rem] rounded-full border border-secondary opacity-25'></span>
+            <span className='absolute -z-10 top-0 right-[-35rem] w-[100rem] h-[100rem] rounded-full border border-secondary opacity-25'></span>
             <span className='absolute -z-40 top-60 right-[-30rem] w-[80rem] h-[80rem] rounded-full border border-secondary opacity-25'></span>
             <span className='absolute -z-40 top-96 right-[-10rem] w-[40rem] h-[40rem] rounded-full border border-secondary opacity-25'></span>
         </div>
