@@ -1,16 +1,22 @@
 import image from '../../../assets/image1.png';
+import Modal from '../../../components/Modal';
 import { SearchField } from '../../../components/SearchField';
+import HomeModalBodyOne from './HomeModalBodyOne';
 
 const Hero = () => {
 
-    return <section className="w-full min-h-[80vh] bg-primary relative z-10 overflow-hidden">
+    return <section className="w-full min-h-[80vh] bg-primary relative overflow-hidden">
         <div className="max-w h-full lg:flex justify-between">
             <div className='lg:w-[43rem] mt-24'>
                 <h1 className='text-4xl lg:text-[3.25rem] font-bold font-Sora text-white leading-normal'>Shop products from USA and save up to 40%</h1>
                 <p className='mt-4 text-[1.25rem] text-gray-400'>Thousands of deals on gadgets, shoes, cosmetics, watches - everything from the US.</p>
-                <div className='mt-8 lg:flex items-center'>
-                    <SearchField width={'30'} placeholder={'Paste the URL of the product'} />
-                    <button className='btn-primary px-[20px] py-[17px] w-full lg:w-auto mt-2 lg:mt-0'>Create Request</button>
+                <div className='mt-8 lg:flex items-center relative z-10'>
+                    <SearchField placeholder={'Paste the URL of the product'} width={''} />
+                    <Modal
+                        btnName='Create Request'
+                        btnType='btn-primary px-[20px] py-[17px] w-full lg:w-auto mt-2 lg:mt-0'
+                        body={<HomeModalBodyOne />}
+                    />
                 </div>
                 <div className='mt-12 hidden lg:flex gap-8 text-white '>
                     <div className='flex gap-2 justify-start'>
@@ -29,12 +35,12 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className='lg:w-1/2 lg:mt-12 mb-20'>
+            <div className='lg:w-1/2 lg:mt-12 mb-20 relative z-0'>
                 <img src={image} alt="banner image" />
             </div>
-            <span className='absolute -z-10 top-0 right-[-35rem] w-[100rem] h-[100rem] rounded-full border border-secondary opacity-25'></span>
-            <span className='absolute -z-40 top-60 right-[-30rem] w-[80rem] h-[80rem] rounded-full border border-secondary opacity-25'></span>
-            <span className='absolute -z-40 top-96 right-[-10rem] w-[40rem] h-[40rem] rounded-full border border-secondary opacity-25'></span>
+            <span className='absolute z-0 top-0 right-[-35rem] w-[100rem] h-[100rem] rounded-full border border-secondary opacity-25'></span>
+            <span className='absolute z-0 top-60 right-[-30rem] w-[80rem] h-[80rem] rounded-full border border-secondary opacity-25'></span>
+            <span className='absolute z-0 top-96 right-[-10rem] w-[40rem] h-[40rem] rounded-full border border-secondary opacity-25'></span>
         </div>
     </section>
 }

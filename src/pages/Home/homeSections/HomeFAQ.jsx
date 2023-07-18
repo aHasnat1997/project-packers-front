@@ -5,7 +5,7 @@ const HomeFAQ = () => {
 
     return <section className="section-div">
         <h2 className='text-4xl text-center mb-12 font-semibold'>Frequently Asked Questions</h2>
-        <div className="lg:flex flex-wrap gap-7">
+        <div className="lg:flex justify-between">
             <div>
                 <FAQComp title='Frequently Asked Questions?'
                     p='Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.'

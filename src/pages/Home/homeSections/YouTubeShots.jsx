@@ -9,7 +9,7 @@ const YouTubeShots = () => {
         <Shots videoId='pMMeqBiEiAk' />
     ];
 
-    return <section className="max-w -mb-24 lg:-mb-52 relative z-20 -top-20 lg:-top-52 flex gap-4 overflow-x-auto no-scrollbar">
+    return <section className="max-w -mb-24 lg:-mb-52 relative -top-20 lg:-top-52 flex gap-4 overflow-x-auto no-scrollbar">
         {slide}
     </section>
 };

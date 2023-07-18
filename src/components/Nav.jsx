@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { Logo } from "./Logo";
 import { SearchField } from "./SearchField";
+// import XIcon from '../assets/icon/cd-cancel.svg';
+// import xIcon from '../components/Icons';
 
 const Nav = ({ isOpen, setOpen }) => {
 
@@ -8,8 +10,8 @@ const Nav = ({ isOpen, setOpen }) => {
         <div className='max-w flex lg:justify-between items-center gap-1 lg:gap-8'>
             <div className="hidden lg:flex items-center justify-between gap-4">
                 <Link to='/'><Logo isNav={true} /></Link>
-                <SearchField placeholder={'Paste the URL of the product'} iconColor={'#F2C852'} width={'43'} />
-                <div className="flex items-center gap-2 lg:gap-4">
+                <SearchField placeholder='Paste the URL of the product' iconColor='#F2C852' width='43' />
+                <div className="flex items-center justify-between gap-2 lg:gap-4">
                     <button className="text-primary text-base">Support</button>
                     <div className='ml-[2.5rem]'>
                         <button className="btn-outline py-[11px] px-[20px]">Login</button>
@@ -24,9 +26,12 @@ const Nav = ({ isOpen, setOpen }) => {
                             <path d="M4 5H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M4 19H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg> : <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.7463 11.6463L12.4008 11.9917L12.7381 12.345L19.0381 18.945L19.038 18.9451L19.0463 18.9534C19.1506 19.0577 19.151 19.2402 19.0473 19.3452C19.0465 19.3458 19.0425 19.3492 19.0345 19.3544C19.0232 19.3618 19.0082 19.3701 18.9903 19.3777C18.9522 19.3941 18.9194 19.3998 18.8998 19.3998C18.8802 19.3998 18.8474 19.3941 18.8093 19.3777C18.7915 19.3701 18.7764 19.3618 18.7651 19.3544C18.7583 19.35 18.7544 19.3469 18.7528 19.3456C18.7525 19.3454 18.7523 19.3452 18.7522 19.3451L12.2534 12.8463L11.8998 12.4927L11.5463 12.8463L5.04738 19.3451C5.04668 19.3457 5.04261 19.3491 5.03448 19.3544C5.02324 19.3618 5.00815 19.3701 4.99035 19.3777C4.95222 19.3941 4.91937 19.3998 4.8998 19.3998C4.88024 19.3998 4.84739 19.3941 4.80926 19.3777C4.79145 19.3701 4.77637 19.3618 4.76513 19.3544C4.75712 19.3492 4.75305 19.3458 4.75227 19.3452C4.64862 19.2402 4.64898 19.0577 4.75336 18.9534L11.2534 12.4534L11.6069 12.0998L11.2534 11.7463L4.75336 5.24625C4.64862 5.14151 4.64862 4.9581 4.75336 4.85336C4.8581 4.74862 5.04151 4.74862 5.14625 4.85336L5.14624 4.85337L5.149 4.85609L11.649 11.2561L12.0025 11.6042L12.3534 11.2534L18.8534 4.75336C18.9581 4.64862 19.1415 4.64862 19.2463 4.75336C19.351 4.8581 19.351 5.04151 19.2463 5.14625L12.7463 11.6463Z" fill="#141B34" stroke="#0D3D4B" />
-                        </svg>
+                        </svg> :
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 5L5 19" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M5 5L19 19" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        // <img src={XIcon} alt="icon" />
                     }
                 </button>
                 <Link to='/'><Logo isNav={true} /></Link>
@@ -34,10 +39,8 @@ const Nav = ({ isOpen, setOpen }) => {
                 <button className="btn-outline py-[11px] px-[20px]">Login</button>
             </div>
         </div>
-
-        {/* <div onClick={() => setOpen(!isOpen)} className={`lg:hidden absolute z-40 top-0 h-screen bg-black`}></div> */}
-
-        <div className="lg:hidden">
+        {/* responsive nav part */}
+        <div className="lg:hidden fixed top-0 left-0 right-0 z-50 drop-shadow-2xl">
             <div className={`h-screen w-5/6 bg-white py-12 px-4 fixed z-50 top-0 duration-300 
             ${!isOpen ? '-ml-96' : ''}`}>
                 <div className="flex items-center gap-2 mb-8">
