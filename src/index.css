@@ -9,6 +9,7 @@
 .section-div{
     @apply max-w font-Jakarta my-20; 
 }
+
 .btn-primary{
     @apply bg-secondary font-bold text-primary rounded-full;
 }
@@ -26,7 +27,7 @@
 }
 
 .input-field{
-    @apply border-2 rounded-full py-[15px] text-[14px];
+    @apply border-2 rounded-full text-[14px];
 }
 
 .no-scrollbar::-webkit-scrollbar {
@@ -36,4 +37,9 @@
 .no-scrollbar {
     -ms-overflow-style: none; 
     scrollbar-width: none; 
+}
+
+.input-pass-icon{
+    -webkit-text-security: square;
+    /* -webkit-text-security: circle; */
 }

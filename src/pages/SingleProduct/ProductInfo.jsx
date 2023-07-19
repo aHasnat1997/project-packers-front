@@ -3,6 +3,7 @@ import icon from '../../assets/money-back.svg';
 
 const ProductInfo = () => {
     return (
+        // to-do: responsive
         <div className='w-full h-full border rounded-xl px-5'>
             <div className='py-4 border-b flex justify-between items-center gap-32'>
                 <h4 className='text-lg'>Product Price</h4>

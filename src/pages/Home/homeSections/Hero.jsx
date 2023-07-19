@@ -11,7 +11,10 @@ const Hero = () => {
                 <h1 className='text-4xl lg:text-[3.25rem] font-bold font-Sora text-white leading-normal'>Shop products from USA and save up to 40%</h1>
                 <p className='mt-4 text-[1.25rem] text-gray-400'>Thousands of deals on gadgets, shoes, cosmetics, watches - everything from the US.</p>
                 <div className='mt-8 lg:flex items-center relative z-10'>
-                    <SearchField placeholder={'Paste the URL of the product'} width={''} />
+                    <SearchField
+                        placeholder={'Paste the URL of the product'}
+                        fieldStyle='w-full lg:w-[26rem] py-[1rem]'
+                    />
                     <Modal
                         btnName='Create Request'
                         btnType='btn-primary px-[20px] py-[17px] w-full lg:w-auto mt-2 lg:mt-0'

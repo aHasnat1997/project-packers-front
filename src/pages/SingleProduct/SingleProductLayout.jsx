@@ -13,6 +13,7 @@ const SingleProductLayout = () => {
                     <ProductInfo />
                 </aside>
             </div>
+            {/* to-do: width */}
             <div className='mt-12'>
                 <h3 className='text-2xl font-semibold'>iPad Air 64Gb Wi-Fi Space Gray</h3>
                 <p className='mt-4'>
