@@ -2,8 +2,10 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import star from '../../../assets/icon/star.svg';
+import { useTitle } from '../../../Hooks/useTitle';
 
 const OTPVerificationPage = () => {
+    useTitle('OTP Verification');
     const navigate = useNavigate();
 
     const { register, handleSubmit } = useForm();
@@ -25,22 +27,26 @@ const OTPVerificationPage = () => {
                     <div className='flex items-center gap-4'>
                         <input
                             {...register('number')}
-                            type='number'
+                            type='text'
+                            maxlength='1'
                             className='w-full input-field px-5 py-4 text-center'
                         />
                         <input
                             {...register('number')}
-                            type='number'
+                            type='text'
+                            maxlength='1'
                             className='w-full input-field px-5 py-4 text-center'
                         />
                         <input
                             {...register('number')}
-                            type='number'
+                            type='text'
+                            maxlength='1'
                             className='w-full input-field px-5 py-4 text-center'
                         />
                         <input
                             {...register('number')}
-                            type='number'
+                            type='text'
+                            maxlength='1'
                             className='w-full input-field px-5 py-4 text-center'
                         />
                     </div>

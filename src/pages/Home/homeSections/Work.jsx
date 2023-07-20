@@ -2,6 +2,9 @@ import image from '../../../assets/Rectangle18.png';
 import WorkList from '../../../components/WorkList';
 
 const Works = () => {
+    // const 
+
+
     return <section className="bg-tertiary py-16">
         <div className="section-div flex flex-col lg:flex-row gap-16">
             <div className='lg:w-1/2'>

@@ -1,10 +1,11 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
+import { useTitle } from '../../../Hooks/useTitle';
 
 const AccountRecoveryPage = () => {
+    useTitle('Account Recovery');
     const navigate = useNavigate();
-
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);

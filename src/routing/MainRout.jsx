@@ -8,7 +8,8 @@ import LoginPage from "../pages/AuthenticationPages/Login/LoginPage";
 import SingUpPage from "../pages/AuthenticationPages/SingUp/SingUpPage";
 import AccountRecoveryPage from "../pages/AuthenticationPages/AccountRecovery/AccountRecoveryPage";
 import OTPVerificationPage from "../pages/AuthenticationPages/OTPVerification/OTPVerificationPage";
-import NewPasswordPage from "../pages/AuthenticationPages/NewPasseord/NewPasswordPage";
+import NewPasswordPage from "../pages/AuthenticationPages/NewPassword/NewPasswordPage";
+import AddToCartLayoutPage from "../pages/AddToCart/AddToCartLayoutPage";
 
 export const router = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ export const router = createBrowserRouter([
             {
                 path: '/product',
                 element: <SingleProductLayout />
+            },
+            {
+                path: '/cart',
+                element: <AddToCartLayoutPage />
             }
         ]
     },

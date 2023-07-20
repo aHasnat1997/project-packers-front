@@ -1,0 +1,233 @@
+{
+    "docs": [
+        {
+            "_id": "64b511442c4a4197150edf19",
+            "name": "apple123",
+            "descriptions": "hello world",
+            "tags": [
+                "a",
+                "b",
+                "c"
+            ],
+            "mainPrice": "100",
+            "discountedPrice": "50",
+            "numberOfStock": "20",
+            "pImages": [
+                "images/fe64e702818932a8dcf4f186d6e8a072.jpg",
+                "images/50434cf64559113b49d8a7323cad3d80.jpg",
+                "images/cd2d8aefa863c77467e6b3bbbad6bd01.jpg"
+            ],
+            "categoryId": null,
+            "createdAt": "2023-07-17T10:00:36.238Z",
+            "updatedAt": "2023-07-17T10:00:36.238Z",
+            "__v": 0
+        },
+        {
+            "_id": "64b50f8d6855e8e3c93fdc83",
+            "name": "apple123",
+            "descriptions": "hello world",
+            "tags": [
+                "a",
+                "b",
+                "c"
+            ],
+            "mainPrice": "100",
+            "discountedPrice": "50",
+            "numberOfStock": "20",
+            "pImages": [
+                "images/50a9d7928fce0c81fe4d0ebf40a8cbe3.jpg",
+                "images/2f3ac68b032905f107f1a658e3f707fd.jpg",
+                "images/801037c02b46be3a4314293cbbc309f1.jpg"
+            ],
+            "categoryId": null,
+            "createdAt": "2023-07-17T09:53:17.121Z",
+            "updatedAt": "2023-07-17T09:53:17.121Z",
+            "__v": 0
+        },
+        {
+            "_id": "64b50f759065367039445bca",
+            "name": "apple123",
+            "descriptions": "hello world",
+            "tags": [
+                "a",
+                "b",
+                "c"
+            ],
+            "mainPrice": "100",
+            "discountedPrice": "50",
+            "numberOfStock": "20",
+            "pImages": [
+                "images/1a4926c82f530cc899c3b1dd474560b6.jpg",
+                "images/3617f18dc1f8af53cdb826611c467edd.jpg",
+                "images/e8589ec1b53111aea44d2ddab39f2589.jpg"
+            ],
+            "categoryId": null,
+            "createdAt": "2023-07-17T09:52:53.766Z",
+            "updatedAt": "2023-07-17T09:52:53.766Z",
+            "__v": 0
+        },
+        {
+            "_id": "64b50f04082354c835387fde",
+            "name": "apple123",
+            "descriptions": "hello world",
+            "tags": [
+                "a",
+                "b",
+                "c"
+            ],
+            "mainPrice": "100",
+            "discountedPrice": "50",
+            "numberOfStock": "20",
+            "pImages": [
+                "images/fd5645d3b21924344285bc3d2e9d1d81.jpg",
+                "images/027dfb44e94df308167f2abedf2792c9.jpg",
+                "images/640af2f609499fa96c0a11b9eb6e59f0.jpg"
+            ],
+            "categoryId": null,
+            "createdAt": "2023-07-17T09:51:00.325Z",
+            "updatedAt": "2023-07-17T09:51:00.325Z",
+            "__v": 0
+        },
+        {
+            "_id": "64b50eb179fc3734eea9cb2e",
+            "name": "apple123",
+            "descriptions": "hello world",
+            "tags": [
+                "a",
+                "b",
+                "c"
+            ],
+            "mainPrice": "100",
+            "discountedPrice": "50",
+            "numberOfStock": "20",
+            "pImages": [
+                "images/f8cb405feed0050946d1fcd9fa5867c5.jpg",
+                "images/cae2acc33f434426c323a0e17e87d670.jpg",
+                "images/0d27bc54b167466ab8abb42b8f260c98.jpg"
+            ],
+            "categoryId": null,
+            "createdAt": "2023-07-17T09:49:37.156Z",
+            "updatedAt": "2023-07-17T09:49:37.156Z",
+            "__v": 0
+        },
+        {
+            "_id": "64b50dcac45a00834125b49e",
+            "name": "apple123",
+            "descriptions": "hello world",
+            "tags": [
+                "a",
+                "b",
+                "c"
+            ],
+            "mainPrice": "100",
+            "discountedPrice": "50",
+            "numberOfStock": "20",
+            "pImages": [
+                "images/01c331240d40d65e66a578fea0f71e2f.jpg",
+                "images/9801c77e2a2d38610afa2ad744421698.jpg",
+                "images/4dc901c3748d07d7c8edc44f4f4230f3.jpg"
+            ],
+            "categoryId": null,
+            "createdAt": "2023-07-17T09:45:46.277Z",
+            "updatedAt": "2023-07-17T09:45:46.277Z",
+            "__v": 0
+        },
+        {
+            "_id": "64b50da56f4939ff1d5905b5",
+            "name": "apple123",
+            "descriptions": "hello world",
+            "tags": [
+                "a",
+                "b",
+                "c"
+            ],
+            "mainPrice": "100",
+            "discountedPrice": "50",
+            "numberOfStock": "20",
+            "pImages": [
+                "images/800e957834b1add3f17d40b3abf5f4ee.jpg",
+                "images/52c39d921b75d99984456f6b6a18fecd.jpg",
+                "images/8ea92650ab6be31237d6a17100b3fec9.jpg"
+            ],
+            "categoryId": null,
+            "createdAt": "2023-07-17T09:45:09.386Z",
+            "updatedAt": "2023-07-17T09:45:09.386Z",
+            "__v": 0
+        },
+        {
+            "_id": "64b50ccd64c3ec0c12f6cf78",
+            "name": "apple123",
+            "descriptions": "hello world",
+            "tags": [
+                "a",
+                "b",
+                "c"
+            ],
+            "mainPrice": "100",
+            "discountedPrice": "50",
+            "numberOfStock": "20",
+            "pImages": [
+                "images/ff0da64166a858f4f3621742aee3e812.jpg",
+                "images/71eea6e3d96f583a99557ccc86413f5c.jpg",
+                "images/339b9a5f5092fc6f750d6573e598ce62.jpg"
+            ],
+            "categoryId": null,
+            "createdAt": "2023-07-17T09:41:33.305Z",
+            "updatedAt": "2023-07-17T09:41:33.305Z",
+            "__v": 0
+        },
+        {
+            "_id": "64b50c68d6f1f9a8387ef1d7",
+            "name": "apple123",
+            "descriptions": "hello world",
+            "tags": [
+                "a",
+                "b",
+                "c"
+            ],
+            "mainPrice": "100",
+            "discountedPrice": "50",
+            "numberOfStock": "20",
+            "pImages": [
+                "images/85871430d85858730f9f50b24e1e29c2.jpg",
+                "images/a40b9124755d3edc9d1f5b3a81498aa7.jpg",
+                "images/887c9e5cde496147ab18677ce5c42ab3.jpg"
+            ],
+            "categoryId": null,
+            "createdAt": "2023-07-17T09:39:52.868Z",
+            "updatedAt": "2023-07-17T09:39:52.868Z",
+            "__v": 0
+        },
+        {
+            "_id": "64b50b6f2a7ec0916bbe94c6",
+            "name": "apple123",
+            "descriptions": "hello world",
+            "tags": [
+                "a",
+                "b",
+                "c"
+            ],
+            "mainPrice": "100",
+            "discountedPrice": "50",
+            "numberOfStock": "20",
+            "pImages": [
+                "images/b1f47eca241e4ad0e54adc506084f1de.jpg",
+                "images/cf8302b81fccb870ddf693f1b1705c20.jpg",
+                "images/773a78c87955050b53182dd6113515ad.jpg"
+            ],
+            "categoryId": null,
+            "createdAt": "2023-07-17T09:35:43.539Z",
+            "updatedAt": "2023-07-17T09:35:43.539Z",
+            "__v": 0
+        }
+    ],
+    "totalDocs": 11,
+    "limit": 10,
+    "totalPages": 2,
+    "page": 1,
+    "pagingCounter": 1,
+    "hasPrevPage": false,
+    "hasNextPage": true,
+    "prevPage": null,
+    "nextPage": 2
+}

@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 
-const FAQComp = ({ title, p }) => {
+const FAQComp = ({ title, paragraph }) => {
     const [isOpen, setOpen] = useState(false);
 
     return <button
         onClick={() => setOpen(!isOpen)}
-        onBlur={()=>setOpen(false)}
+        onBlur={() => setOpen(false)}
         className="w-full lg:w-96 py-4 border-b-2 cursor-pointer"
     >
         <div
@@ -19,13 +19,13 @@ const FAQComp = ({ title, p }) => {
             >
                 ?
             </span>
-            <h4 className="text-xl font-semibold">{title}</h4>
+            <h4 className="flex-1 text-lg lg:text-xl font-semibold">{title}</h4>
         </div>
         <p
-            className={`ml-16 h-0 transition-all duration-1000 
+            className={`h-0 transition-all duration-1000 text-left pt-4 lg:ml-16
             ${!isOpen ? 'scale-y-0 overflow-hidden opacity-0' : 'scale-y-100 h-max opacity-100'}`}
         >
-            {p}
+            {paragraph}
         </p>
     </button>;
 }

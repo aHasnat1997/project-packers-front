@@ -7,22 +7,62 @@ import { useEffect, useState } from "react";
 
 const TrendingProducts = () => {
     // const [productArray, setPresentArray] = useState([]);
-    const productArray = [1, 2, 3, 4, 5, 6, 7, 8];
-
-    const cardFn = (imgSrc = String, titleText = String, price = Number) => {
-        return (
-            productArray.map((i) => {
-                return <Cart key={i} img={imgSrc} title={titleText} price={price} />
-            })
-        );
-    };
+    const productArray = [
+        {
+            img: image,
+            title: 'iConnect by Timex Active Smartwatch',
+            price: 28.95
+        },
+        {
+            img: image,
+            title: 'iConnect by Timex Active Smartwatch',
+            price: 28.95
+        },
+        {
+            img: image,
+            title: 'iConnect by Timex Active Smartwatch',
+            price: 28.95
+        },
+        {
+            img: image,
+            title: 'iConnect by Timex Active Smartwatch',
+            price: 28.95
+        },
+        {
+            img: image,
+            title: 'iConnect by Timex Active Smartwatch',
+            price: 28.95
+        },
+        {
+            img: image,
+            title: 'iConnect by Timex Active Smartwatch',
+            price: 28.95
+        },
+        {
+            img: image,
+            title: 'iConnect by Timex Active Smartwatch',
+            price: 28.95
+        },
+        {
+            img: image,
+            title: 'iConnect by Timex Active Smartwatch',
+            price: 28.95
+        }
+    ];
 
     return <section className="section-div">
         <h1 className="text-4xl text-center font-semibold">Trending products on  Project Packers</h1>
         <p className="mt-4 text-center text-lg text-gray-400">Get inspired by what people in your city are buying from abroad with<br /> the biggest savings</p>
-        <div className="mt-12 grid lg:grid-cols-4">
+        <div className="mt-12 bg-slate-200 py-[1px] grid lg:grid-cols-4 gap-[1px]">
             {
-                cardFn(image, 'iConnect by Timex Active Smartwatch', 28.95)
+                productArray.map((product, i) => {
+                    return <Cart
+                        key={i}
+                        img={product.img}
+                        title={product.title}
+                        price={product.price}
+                    />
+                })
             }
         </div>
         <Link to='/all-products'>

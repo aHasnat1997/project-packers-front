@@ -1,5 +1,3 @@
-
-
 const WorkList = ({ title, p }) => {
     return <div className="flex gap-5 items-start font-Jakarta">
         <span className="p-3 bg-secondary border border-primary rounded-full">

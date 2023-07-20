@@ -1,30 +1,70 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Cart from '../../components/Cart';
 import image from '../../assets/Rectangle 1.png';
 
 const AllProducts = () => {
-    // const [productArray, setPresentArray] = useState([]);
-    const productArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const productArray = [
+        {
+            img: image,
+            title: 'iConnect by Timex Active Smartwatch',
+            price: 28.95
+        },
+        {
+            img: image,
+            title: 'iConnect by Timex Active Smartwatch',
+            price: 28.95
+        },
+        {
+            img: image,
+            title: 'iConnect by Timex Active Smartwatch',
+            price: 28.95
+        },
+        {
+            img: image,
+            title: 'iConnect by Timex Active Smartwatch',
+            price: 28.95
+        },
+        {
+            img: image,
+            title: 'iConnect by Timex Active Smartwatch',
+            price: 28.95
+        },
+        {
+            img: image,
+            title: 'iConnect by Timex Active Smartwatch',
+            price: 28.95
+        },
+        {
+            img: image,
+            title: 'iConnect by Timex Active Smartwatch',
+            price: 28.95
+        },
+        {
+            img: image,
+            title: 'iConnect by Timex Active Smartwatch',
+            price: 28.95
+        },
+        {
+            img: image,
+            title: 'iConnect by Timex Active Smartwatch',
+            price: 28.95
+        },
 
-    const cardFn = (imgSrc = String, titleText = String, price = Number) => {
-        return (
-            productArray.map((i) => {
-                return <Cart key={i} img={imgSrc} title={titleText} price={price} />
-            })
-        );
-    };
+    ];
 
     return (
-        <>
-            <div className='grid lg:grid-cols-3'>
-                {
-                    cardFn(image, 'iConnect by Timex Active Smartwatch', 28.95)
-                }
-            </div>
-            <div>
-
-            </div>
-        </>
+        <div className='bg-slate-200 py-[1px] grid lg:grid-cols-3 gap-[1px]'>
+            {
+                productArray.map((product, i) => (
+                    <Cart
+                        key={i}
+                        img={product.img}
+                        title={product.title}
+                        price={product.price}
+                    />
+                ))
+            }
+        </div>
     );
 };
 

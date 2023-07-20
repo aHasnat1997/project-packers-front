@@ -2,8 +2,10 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import lock from '../../../assets/icon/circle-lock.svg';
+import { useTitle } from '../../../Hooks/useTitle';
 
 const NewPasswordPage = () => {
+    useTitle('New Password');
     const navigate = useNavigate();
 
     const { register, handleSubmit } = useForm();

@@ -1,11 +1,17 @@
 import React, { useState } from 'react';
 import icon from '../assets/icon/cd-arrow-right-2.svg';
 
-const Dropdown = ({ ddTitle, ddIcon, ddBody, open, ddPosition }) => {
+const Dropdown = ({
+    ddTitle = String,
+    ddIcon = Boolean,
+    ddBody = Object,
+    open = Boolean,
+    ddPosition = String
+}) => {
     const [isOpen, satOpen] = useState(open ? true : false)
 
     return (
-        <button
+        <div
             onBlur={() => satOpen(false)}
             className={`relative z-20 flex-1`}
         >
@@ -24,7 +30,7 @@ const Dropdown = ({ ddTitle, ddIcon, ddBody, open, ddPosition }) => {
             >
                 {ddBody}
             </div>
-        </button>
+        </div>
     );
 };
 

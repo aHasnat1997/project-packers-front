@@ -22,7 +22,7 @@
 --------------------------------
 1. Home ---------------------- done
 2. Products ----------------- done
-3. Single Products
+3. Single Products ---------- done
 4. Checkout
 5. Add to Cart
 6. All Blogs

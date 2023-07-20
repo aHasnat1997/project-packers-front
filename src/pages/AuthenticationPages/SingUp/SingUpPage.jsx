@@ -3,17 +3,21 @@ import google from '../../../assets/icon/google-icon.svg';
 import facebook from '../../../assets/icon/facebook-icon.svg';
 import apple from '../../../assets/icon/apple-icon.svg';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useTitle } from '../../../Hooks/useTitle';
 
 const SingUpPage = () => {
+    useTitle('Sing up');
+    const navigate  = useNavigate();
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
+        navigate('/auth/log-in');
     }
 
     return (
         <section className='max-w pt-16 flex items-center justify-between'>
-            <div className='lg:w-1/2'>
+            <div className='lg:w-1/2 pr-28'>
                 <p className='text-2xl text-white'>User original product shopping experience  made easy and fun</p>
                 <p className='mt-5 text-white'>
                     Already have an account yet?

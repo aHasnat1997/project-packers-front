@@ -2,13 +2,23 @@ import React from 'react';
 import google from '../../../assets/icon/google-icon.svg';
 import facebook from '../../../assets/icon/facebook-icon.svg';
 import apple from '../../../assets/icon/apple-icon.svg';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+import { useTitle } from '../../../Hooks/useTitle';
 
 const LoginPage = () => {
+    // to-do: navigate to previous page
+    useTitle('Log in');
+    const navigate = useNavigate();
+    const location = useLocation();
+    console.log(location);
+    const from = location.state?.from?.pathname;
+    console.log(from);
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
+        navigate(from, { replace: true });
+
     }
 
     return (

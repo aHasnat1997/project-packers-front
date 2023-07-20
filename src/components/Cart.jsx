@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Cart = ({ img, title, price, onClickFunction }) => {
     return <Link to='/product'
         onClick={onClickFunction}
-        className='px-3 pb-8 border cursor-pointer'
+        className='bg-white px-3 pb-8 cursor-pointer flex flex-col justify-center'
     >
         <img src={img} alt="Product Image" />
         <div className='mt-7'>
