@@ -1,12 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Logo } from "./Logo";
 import { SearchField } from "./SearchField";
 import avatar from '../assets/icon/avatar.svg';
 import notification from '../assets/icon/cd-notification-01.svg';
 import support from '../assets/icon/cd-customer-support-01.svg';
 import logout from '../assets/icon/logout.svg';
+import { useContext } from "react";
+import { AuthContext } from "../context/AuthProvider";
+import usePreviousLocation from "../Hooks/usePreviousLocation";
 
 const Nav = ({ isOpen, setOpen }) => {
+    const { user } = useContext(AuthContext);
+    const { savePreviousLocation } = usePreviousLocation();
+    const location = useLocation();
+
     const lgNav = () => {
         return (
             <div className="max-w hidden lg:flex items-center justify-between gap-4">
@@ -16,14 +23,24 @@ const Nav = ({ isOpen, setOpen }) => {
                     <button className="text-primary text-base">Support</button>
                 </div>
                 <div>
-                    <div className='ml-[2.5rem] flex gap-4'>
-                        <Link to='/auth/log-in'>
-                            <button className="btn-outline py-[8px] px-[20px]">Log In</button>
-                        </Link>
-                        <Link to='/auth/sing-up'>
-                            <button className="btn-secondary py-[8px] px-[20px]">Sign Up</button>
-                        </Link>
-                    </div>
+                    {
+                        user ?
+                            ''
+                            :
+                            <div className='ml-[2.5rem] flex gap-4'>
+                                <Link to='/auth/log-in'>
+                                    <button
+                                        className="btn-outline py-[8px] px-[20px]"
+                                        onClick={() => savePreviousLocation(location.pathname)}
+                                    >
+                                        Log In
+                                    </button>
+                                </Link>
+                                <Link to='/auth/sing-up'>
+                                    <button className="btn-secondary py-[8px] px-[20px]">Sign Up</button>
+                                </Link>
+                            </div>
+                    }
                 </div>
             </div>
         );

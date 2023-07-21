@@ -1,7 +1,6 @@
 import Cart from "../../../components/Cart";
 import image from '../../../assets/Rectangle 1.png';
 import { Link } from "react-router-dom";
-import { stringify } from "postcss";
 import { useEffect, useState } from "react";
 
 

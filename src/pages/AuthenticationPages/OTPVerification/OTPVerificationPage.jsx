@@ -28,25 +28,25 @@ const OTPVerificationPage = () => {
                         <input
                             {...register('number')}
                             type='text'
-                            maxlength='1'
+                            maxLength='1'
                             className='w-full input-field px-5 py-4 text-center'
                         />
                         <input
                             {...register('number')}
                             type='text'
-                            maxlength='1'
+                            maxLength='1'
                             className='w-full input-field px-5 py-4 text-center'
                         />
                         <input
                             {...register('number')}
                             type='text'
-                            maxlength='1'
+                            maxLength='1'
                             className='w-full input-field px-5 py-4 text-center'
                         />
                         <input
                             {...register('number')}
                             type='text'
-                            maxlength='1'
+                            maxLength='1'
                             className='w-full input-field px-5 py-4 text-center'
                         />
                     </div>

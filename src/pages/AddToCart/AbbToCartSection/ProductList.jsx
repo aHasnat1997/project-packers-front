@@ -1,52 +1,61 @@
 import React from 'react';
-import imgOne from '../../../assets/Rectangle 1.png';
-import imgTwo from '../../../assets/product-2.png';
-import imgThree from '../../../assets/product-3.png';
 
-const ProductList = () => {
-    const productArray = [
-        {
-            img: imgOne,
-            title: 'iConnect by Timex Active Smartwatch',
-            price: 89.34
-        },
-        {
-            img: imgTwo,
-            title: 'iPad Air 64Gb Wi-Fi Space Gray',
-            price: 275.50
-        },
-        {
-            img: imgThree,
-            title: 'OTTERBOX COMMUTER SERIES Case for iPhone 12 & iPhone 12 Pro',
-            price: 89.34
-        },
-    ]
+const ProductList = ({ productArray = Array }) => {
 
     return (
-        <section>
+        <section className='w-full col-span-2'>
             <table className='w-full'>
-                <tr>
-                    <th>Product list</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                </tr>
+                <thead className='text-primary font-semibold text-left border-b'>
+                    <tr>
+                        <th className='pb-3'>Product list</th>
+                        <th className='pb-3'>Quantity</th>
+                        <th className='pb-3 hidden lg:block'>Price</th>
+                    </tr>
+                </thead>
                 {
                     productArray.map((product, i) => (
-                        <tr key={i}>
-                            <td className='flex gap-4 items-center'>
-                                <img
-                                    src={product.img}
-                                    alt="product image"
-                                    className='w-16'
-                                />
-                                <h4>{product.title}</h4>
-                            </td>
-                            <td></td>
-                            <td>{product.price}</td>
-                        </tr>
+                        <tbody key={i}>
+                            <tr className='border-b'>
+                                <td className='py-3 pr-4 flex gap-4 items-center'>
+                                    <img
+                                        src={product.img}
+                                        alt="product image"
+                                        className='w-16'
+                                    />
+                                    <div>
+                                        <h4>{product.title}</h4>
+                                        <p className='font-semibold lg:hidden'>$ {product.price}</p>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <input
+                                        className='border-2 text-[14px] w-20 py-2 text-center'
+                                        type="text"
+                                        maxLength={1}
+                                        readOnly
+                                        value={5}
+                                    />
+                                </td>
+                                <td className='font-semibold invisible lg:visible'>
+                                    $ {product.price}
+                                </td>
+                            </tr>
+                        </tbody>
                     ))
                 }
             </table>
+            <div className='mt-6 flex justify-between items-center'>
+                <div>
+                    <input
+                        type="text"
+                        className='input-field py-3 px-5'
+                        placeholder='Discount code'
+                    />
+                    <button className='btn-accent py-3 px-5 bg-opacity-50 ml-2'>Apply</button>
+                </div>
+                <button className='btn-accent py-3 px-5 hidden lg:block'>Update cart</button>
+            </div>
         </section>
     );
 };
