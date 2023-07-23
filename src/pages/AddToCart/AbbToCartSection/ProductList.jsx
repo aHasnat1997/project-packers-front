@@ -52,9 +52,13 @@ const ProductList = ({ productArray = Array }) => {
                         className='input-field py-3 px-5'
                         placeholder='Discount code'
                     />
-                    <button className='btn-accent py-3 px-5 bg-opacity-50 ml-2'>Apply</button>
+                    <button className='bg-[#CFF6EF] font-bold rounded-full py-3 px-5 bg-opacity-50 ml-2 duration-200 active:scale-[.90]'>
+                        Apply
+                    </button>
                 </div>
-                <button className='btn-accent py-3 px-5 hidden lg:block'>Update cart</button>
+                <button className='bg-slate-200 font-bold rounded-full py-3 px-5 bg-opacity-50 ml-2 duration-200 active:scale-[.90] hidden lg:block'>
+                    Update cart
+                </button>
             </div>
         </section>
     );

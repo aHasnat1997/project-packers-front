@@ -27,8 +27,8 @@ const AddToCartLayoutPage = () => {
         {
             img: imgThree,
             title: 'OTTERBOX COMMUTER SERIES Case for iPhone 12 & iPhone 12 Pro',
-            price: 89.34,
-            usPrice: 20.00,
+            price: 72.34,
+            usPrice: 30.00,
             shipping: 8.00
         },
     ];
@@ -36,7 +36,7 @@ const AddToCartLayoutPage = () => {
     return (
         <>
             <Breadcrumb />
-            <section className='section-div w-full grid lg:grid-cols-3 items-center gap-8'>
+            <section className='section-div w-full grid lg:grid-cols-3 items-start gap-8'>
                 <ProductList productArray={array} />
                 <ProductPrice productArray={array} />
             </section>

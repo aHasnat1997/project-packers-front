@@ -10,6 +10,7 @@ import AccountRecoveryPage from "../pages/AuthenticationPages/AccountRecovery/Ac
 import OTPVerificationPage from "../pages/AuthenticationPages/OTPVerification/OTPVerificationPage";
 import NewPasswordPage from "../pages/AuthenticationPages/NewPassword/NewPasswordPage";
 import AddToCartLayoutPage from "../pages/AddToCart/AddToCartLayoutPage";
+import CheckoutLayoutPage from "../pages/Checkout/CheckoutLayoutPage";
 
 export const router = createBrowserRouter([
     {
@@ -31,6 +32,10 @@ export const router = createBrowserRouter([
             {
                 path: '/cart',
                 element: <AddToCartLayoutPage />
+            },
+            {
+                path: '/checkout',
+                element: <CheckoutLayoutPage />
             }
         ]
     },

@@ -121,7 +121,7 @@ const Nav = ({ isOpen, setOpen }) => {
             <div className="lg:hidden fixed top-0 left-0 right-0 z-50 drop-shadow-2xl">
                 <div
                     className={`h-screen w-5/6 bg-white py-12 px-4 fixed z-50 top-0 duration-300 
-                    ${!isOpen ? '-ml-96' : ''}`}
+                    ${!isOpen ? 'ml-[-100rem]' : ''}`}
                 >
                     <div className="flex items-center gap-2 mb-8">
                         <Link to='/'><Logo isNav={true} /></Link>
