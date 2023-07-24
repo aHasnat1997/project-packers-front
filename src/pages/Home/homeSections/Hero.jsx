@@ -2,6 +2,7 @@ import image from '../../../assets/image1.png';
 import Modal from '../../../components/Modal';
 import { SearchField } from '../../../components/SearchField';
 import HomeModalBodyOne from './HomeModalBodyOne';
+import search from '../../../assets/icon/cd-search-01.svg';
 
 const Hero = () => {
 
@@ -14,6 +15,7 @@ const Hero = () => {
                     <SearchField
                         placeholder={'Paste the URL of the product'}
                         fieldStyle='w-full lg:w-[26rem] py-[1rem]'
+                        icon={search}
                     />
                     <Modal
                         btnName='Create Request'

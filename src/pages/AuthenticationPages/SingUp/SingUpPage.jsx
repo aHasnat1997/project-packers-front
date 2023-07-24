@@ -5,11 +5,13 @@ import apple from '../../../assets/icon/apple-icon.svg';
 import { useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTitle } from '../../../Hooks/useTitle';
+import PhoneInput from 'react-phone-number-input';
+import 'react-phone-number-input/style.css';
 
 const SingUpPage = () => {
     useTitle('Sing up');
-    const navigate  = useNavigate();
-    const { register, handleSubmit } = useForm();
+    const navigate = useNavigate();
+    const { register, handleSubmit, control } = useForm();
     const onSubmit = data => {
         console.log(data);
         navigate('/auth/log-in');
@@ -50,12 +52,12 @@ const SingUpPage = () => {
                     <div className='mt-8'>
                         <label className='text-white mb-2'>Phone number</label>
                         <br />
-                        {/* to-do: country code input */}
-                        <input
+                        <PhoneInput
                             {...register('phone')}
-                            type='tel'
-                            className='w-[30rem] input-field px-5 py-4'
-                            placeholder='Enter Your Phone number'
+                            defaultCountry="BD"
+                            international
+                            placeholder="Enter phone number"
+                            className='w-[30rem] input-field overflow-hidden bg-white py-4 px-5 mt-3'
                         />
                     </div>
                     <div className='mt-8'>
