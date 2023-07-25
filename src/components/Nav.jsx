@@ -10,6 +10,9 @@ import React, { useContext } from "react";
 import { AuthContext } from "../context/AuthProvider";
 import usePreviousLocation from "../Hooks/usePreviousLocation";
 import searchYellow from '../assets/icon/cd-search-yellow.svg';
+import Dropdown from "./Dropdown/Dropdown";
+import NotificationDropdown from "./Dropdown/NotificationDropdown";
+import ProductsDropdown from "./Dropdown/ProductsDropdown";
 
 const Nav = ({ isOpen, setOpen }) => {
     const { user } = useContext(AuthContext);
@@ -17,33 +20,6 @@ const Nav = ({ isOpen, setOpen }) => {
     const location = useLocation();
 
     const lgNav = () => {
-        const iconItems = [
-            {
-                id: 1,
-                src: notification,
-                alt: 'notification',
-                title: 'Notification',
-                padding: 6,
-                href: '/'
-            },
-            {
-                id: 2,
-                src: products,
-                alt: 'products',
-                title: 'Products',
-                padding: 6,
-                href: '/'
-            },
-            {
-                id: 3,
-                src: avatar,
-                alt: 'avatar',
-                title: 'My Account',
-                padding: 0,
-                href: '/'
-            }
-        ];
-
         return (
             <div className="max-w hidden lg:flex items-center justify-between gap-4">
                 <Link to='/'><Logo isNav={true} /></Link>
@@ -59,22 +35,25 @@ const Nav = ({ isOpen, setOpen }) => {
                     {
                         user ?
                             <div className='ml-[2.5rem] flex gap-4 items-center'>
-                                {
-                                    iconItems.map(list => (
-                                        <React.Fragment key={list.id}>
-                                            <Link
-                                                to={list.href}
-                                                className={`bg-tertiary rounded-full p-[${list.padding}px]`}
-                                            >
-                                                <button
-                                                    className={`bg-tertiary rounded-full p-[${list.padding}px]`}
-                                                >
-                                                    <img src={list.src} alt={list.alt} />
-                                                </button>
-                                            </Link>
-                                        </React.Fragment>
-                                    ))
-                                }
+                                <Dropdown
+                                    ddTitle={<img src={notification} alt='icon' />}
+                                    ddIcon={false}
+                                    open={false}
+                                    btnStyle={`bg-tertiary rounded-full p-[6px] duration-300 active:scale-90`}
+                                    ddPosition='absolute top-16 right-[20rem]'
+                                    ddBody={<NotificationDropdown />}
+                                />
+                                <Dropdown
+                                    ddTitle={<img src={products} alt='icon' />}
+                                    ddIcon={false}
+                                    open={true}
+                                    btnStyle={`bg-tertiary rounded-full p-[6px] duration-300 active:scale-90`}
+                                    ddPosition='absolute top-16 right-[20rem]'
+                                    ddBody={<ProductsDropdown />}
+                                />
+                                <button>
+                                    <img src={avatar} alt='icon' />
+                                </button>
                                 <p>Kodu</p>
                             </div>
                             :
@@ -136,7 +115,10 @@ const Nav = ({ isOpen, setOpen }) => {
                         </Link>
                         :
                         <Link to='/auth/log-in' className='flex-1'>
-                            <button className="btn-secondary w-24 py-2">Log In</button>
+                            <button
+                                className="btn-secondary w-24 py-2"
+                                onClick={() => savePreviousLocation(location.pathname)}
+                            >Log In</button>
                         </Link>
                 }
             </div>

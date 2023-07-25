@@ -1,22 +1,24 @@
 import React, { useState } from 'react';
-import icon from '../assets/icon/cd-arrow-right-2.svg';
+import icon from '../../assets/icon/cd-arrow-right-2.svg';
 
 const Dropdown = ({
     ddTitle = String,
     ddIcon = Boolean,
     ddBody = Object,
     open = Boolean,
-    ddPosition = String
+    ddPosition = String,
+    btnStyle = String
 }) => {
     const [isOpen, satOpen] = useState(open ? true : false)
 
     return (
         <div
-            onBlur={() => satOpen(false)}
-            className={`relative z-20 flex-1`}
+            // onBlur={() => satOpen(false)}
+            className={`relative z-20 flex-1 w-full`}
         >
-            <button onClick={() => satOpen(!isOpen)}
-                className='w-full flex justify-between items-center'
+            <button
+                onClick={() => satOpen(!isOpen)}
+                className={`w-full flex justify-between items-center ${btnStyle}`}
             >
                 <span>{ddTitle}</span>
                 <span className={`${!ddIcon && 'hidden'}`}>
@@ -24,7 +26,7 @@ const Dropdown = ({
                 </span>
             </button>
             <div
-                className={`w-full bg-white transition-all duration-1000 
+                className={`w-full transition-all duration-1000 
                 ${!isOpen ? 'opacity-0 hidden' : 'opacity-100'}
                 ${ddPosition}`}
             >

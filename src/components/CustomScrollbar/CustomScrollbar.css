@@ -1,0 +1,29 @@
+/* Add custom scrollbar styles */
+.custom-scrollbar {
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #4b5563 #f3f4f6;
+    max-height: 100vh;
+}
+
+/* Track */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Handle */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #4b5563;
+    border-radius: 4px;
+}
+
+/* Track (IE/Edge) */
+.custom-scrollbar::-ms-scrollbar {
+    width: 6px;
+}
+
+/* Handle (IE/Edge) */
+.custom-scrollbar::-ms-scrollbar-thumb {
+    background-color: #4b5563;
+    border-radius: 4px;
+}

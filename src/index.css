@@ -34,7 +34,7 @@
 }
 
 .input-field{
-    @apply border-2 rounded-full text-[14px];
+    @apply border-2 rounded-full text-[14px] duration-200 focus:outline-none focus:shadow-xl;
 }
 
 .no-scrollbar::-webkit-scrollbar {

@@ -13,23 +13,35 @@ const AddToCartLayoutPage = () => {
         {
             img: imgOne,
             title: 'iConnect by Timex Active Smartwatch',
-            price: 89.34,
+            singlePrice: 4.34,
             usPrice: 24.00,
-            shipping: 8.00
+            shipping: 8.00,
+            quantity: 2,
+            price: () => {
+                this.singlePrice * this.quantity
+            }
         },
         {
             img: imgTwo,
             title: 'iPad Air 64Gb Wi-Fi Space Gray',
-            price: 275.50,
+            singlePrice: 2.50,
             usPrice: 23.00,
-            shipping: 8.00
+            shipping: 8.00,
+            quantity: 1,
+            price: () => {
+                this.singlePrice * this.quantity
+            }
         },
         {
             img: imgThree,
             title: 'OTTERBOX COMMUTER SERIES Case for iPhone 12 & iPhone 12 Pro',
-            price: 72.34,
+            singlePrice: 7.34,
             usPrice: 30.00,
-            shipping: 8.00
+            shipping: 8.00,
+            quantity: 1,
+            price: () => {
+                this.singlePrice * this.quantity
+            }
         },
     ];
 

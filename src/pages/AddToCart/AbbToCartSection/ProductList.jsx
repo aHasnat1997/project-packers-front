@@ -1,4 +1,5 @@
 import React from 'react';
+import Counter from '../../../components/Counter';
 
 const ProductList = ({ productArray = Array }) => {
 
@@ -24,21 +25,15 @@ const ProductList = ({ productArray = Array }) => {
                                     />
                                     <div>
                                         <h4>{product.title}</h4>
-                                        <p className='font-semibold lg:hidden'>$ {product.price}</p>
+                                        <p className='font-semibold lg:hidden'>$ {product.singlePrice}</p>
                                     </div>
 
                                 </td>
                                 <td>
-                                    <input
-                                        className='border-2 text-[14px] w-20 py-2 text-center'
-                                        type="text"
-                                        maxLength={1}
-                                        readOnly
-                                        value={5}
-                                    />
+                                    <Counter fieldStyle='w-[8rem] py-4 rounded-lg' />
                                 </td>
                                 <td className='font-semibold invisible lg:visible'>
-                                    $ {product.price}
+                                    $ {product.singlePrice}
                                 </td>
                             </tr>
                         </tbody>

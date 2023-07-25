@@ -14,9 +14,22 @@ const YouTubeShots = () => {
         {
             videoId: 'pMMeqBiEiAk'
         },
+        {
+            videoId: 'hxWELDpI7IM'
+        },
+        {
+            videoId: 'hxWELDpI7IM'
+        },
+        {
+            videoId: 'hxWELDpI7IM'
+        },{
+            videoId: 'hxWELDpI7IM'
+        },{
+            videoId: 'hxWELDpI7IM'
+        },
     ];
 
-    return <section className="max-w -mb-24 lg:-mb-52 relative -top-20 lg:-top-52 flex gap-4 w-full lg:justify-center items-center px-5 overflow-x-auto no-scrollbar">
+    return <section className="max-w -mb-24 lg:-mb-40 relative -top-20 lg:-top-36 flex gap-4 w-full px-5 overflow-scroll no-scrollbar">
         {
             slides.map((slide, i) => <Shots key={i} videoId={slide.videoId} />)
         }

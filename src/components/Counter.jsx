@@ -4,28 +4,24 @@ import plus from '../assets/icon/cd-plus-sign-01.svg';
 
 const Counter = ({ fieldStyle = String }) => {
     const [value, setValue] = useState(1);
-    const minusBtn = () => {
-        if (value !== 1) {
-            setValue(value - 1)
-        }
-    }
+    
     return (
-        <div className={`flex justify-between border rounded-full ${fieldStyle}`}>
-            <span>
+        <div className={`flex justify-between border relative px-4 ${fieldStyle}`}>
+            <span className='absolute'>
                 <img
                     src={minus}
                     alt="minus"
                     className={`${value === 1 && 'disabled'} cursor-pointer`}
-                    onClick={minusBtn}
+                    onClick={() => (value !== 1 && setValue(value - 1))}
                 />
             </span>
             <input
                 type="text"
                 value={value}
-                className='text-center focus:outline-none'
+                className='text-center w-full mx-auto focus:outline-none'
                 readOnly
             />
-            <span>
+            <span className='absolute right-4'>
                 <img
                     src={plus}
                     alt="plus"

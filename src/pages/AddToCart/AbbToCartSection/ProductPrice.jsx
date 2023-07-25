@@ -20,7 +20,7 @@ const ProductPrice = ({ productArray = Array }) => {
                 <h4>Price Details</h4>
             </div>
             <ul className='border-b'>
-                {listItem('Seller takes', priceReduce('price'))}
+                {listItem('Seller takes', priceReduce('singlePrice'))}
                 {listItem('Seller takes', priceReduce('usPrice'))}
                 {listItem('Seller takes', priceReduce('shipping'))}
             </ul>
@@ -28,7 +28,7 @@ const ProductPrice = ({ productArray = Array }) => {
                 <p>Estimated total</p>
                 <p className='font-semibold'>
                     $ {
-                        parseFloat((priceReduce('price') + priceReduce('usPrice') + priceReduce('shipping')).toFixed(2))
+                        parseFloat((priceReduce('singlePrice') + priceReduce('usPrice') + priceReduce('shipping')).toFixed(2))
                     }
                 </p>
             </div>

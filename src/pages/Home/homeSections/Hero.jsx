@@ -3,11 +3,13 @@ import Modal from '../../../components/Modal';
 import { SearchField } from '../../../components/SearchField';
 import HomeModalBodyOne from './HomeModalBodyOne';
 import search from '../../../assets/icon/cd-search-01.svg';
+import { useState } from 'react';
 
 const Hero = () => {
+    const [searchValue, setSearchValue] = useState('')
 
-    return <section className="w-full min-h-[80vh] bg-primary relative overflow-hidden">
-        <div className="max-w h-full lg:flex justify-between">
+    return <section className="w-full bg-primary relative overflow-hidden">
+        <div className="max-w relative h-full lg:flex justify-between">
             <div className='lg:w-[43rem] mt-24'>
                 <h1 className='text-4xl lg:text-[3.25rem] font-bold font-Sora text-white leading-normal'>Shop products from USA and save up to 40%</h1>
                 <p className='mt-4 text-[1.25rem] text-gray-400'>Thousands of deals on gadgets, shoes, cosmetics, watches - everything from the US.</p>
@@ -16,6 +18,7 @@ const Hero = () => {
                         placeholder={'Paste the URL of the product'}
                         fieldStyle='w-full lg:w-[26rem] py-[1rem]'
                         icon={search}
+                        
                     />
                     <Modal
                         btnName='Create Request'
