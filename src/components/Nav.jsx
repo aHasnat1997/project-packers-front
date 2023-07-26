@@ -13,6 +13,7 @@ import searchYellow from '../assets/icon/cd-search-yellow.svg';
 import Dropdown from "./Dropdown/Dropdown";
 import NotificationDropdown from "./Dropdown/NotificationDropdown";
 import ProductsDropdown from "./Dropdown/ProductsDropdown";
+import { OutSideClick } from "./OutSideClick";
 
 const Nav = ({ isOpen, setOpen }) => {
     const { user } = useContext(AuthContext);
@@ -46,7 +47,7 @@ const Nav = ({ isOpen, setOpen }) => {
                                 <Dropdown
                                     ddTitle={<img src={products} alt='icon' />}
                                     ddIcon={false}
-                                    open={true}
+                                    open={false}
                                     btnStyle={`bg-tertiary rounded-full p-[6px] duration-300 active:scale-90`}
                                     ddPosition='absolute top-16 right-[20rem]'
                                     ddBody={<ProductsDropdown />}
@@ -83,7 +84,6 @@ const Nav = ({ isOpen, setOpen }) => {
                 ${isOpen ? 'ml-[20rem]' : ''}`}
             >
                 <button
-                    onBlur={() => setOpen(false)}
                     onClick={() => setOpen(!isOpen)}
                     className="lg:hidden"
                 >
@@ -163,37 +163,43 @@ const Nav = ({ isOpen, setOpen }) => {
 
 
         return (
-            <div className="lg:hidden fixed top-0 left-0 right-0 z-50 drop-shadow-2xl">
-                <div
-                    className={`h-screen w-5/6 bg-white py-12 px-4 fixed z-50 top-0 duration-300 
+            <OutSideClick
+                show={isOpen}
+                onClickOutside={() => setOpen(false)}
+                body={
+                    <div className="lg:hidden fixed top-0 left-0 right-0 z-50 drop-shadow-2xl">
+                        <div
+                            className={`h-screen w-5/6 bg-white py-12 px-4 fixed z-50 top-0 duration-300 
                     ${!isOpen ? 'ml-[-100rem]' : ''}`}
-                >
-                    <div className="flex items-center gap-2 mb-8">
-                        <Link to='/'><Logo isNav={true} /></Link>
-                        <button className="btn-secondary py-[11px] px-[20px]">Log In or Sign Up</button>
+                        >
+                            <div className="flex items-center gap-2 mb-8">
+                                <Link to='/'><Logo isNav={true} /></Link>
+                                <button className="btn-secondary py-[11px] px-[20px]">Log In or Sign Up</button>
+                            </div>
+                            <hr />
+                            <ul className="mt-8 flex flex-col gap-4">
+                                {
+                                    listItems.map(item => (
+                                        <li key={item.id}>
+                                            <Link
+                                                to={item.href}
+                                                className="flex gap-2 items-center"
+                                            >
+                                                <span
+                                                    className={`bg-tertiary rounded-full p-[${item.padding}px]`}
+                                                >
+                                                    <img src={item.src} alt={item.alt} />
+                                                </span>
+                                                <p className="text-lg">{item.title}</p>
+                                            </Link>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
                     </div>
-                    <hr />
-                    <ul className="mt-8 flex flex-col gap-4">
-                        {
-                            listItems.map(item => (
-                                <li key={item.id}>
-                                    <Link
-                                        to={item.href}
-                                        className="flex gap-2 items-center"
-                                    >
-                                        <span
-                                            className={`bg-tertiary rounded-full p-[${item.padding}px]`}
-                                        >
-                                            <img src={item.src} alt={item.alt} />
-                                        </span>
-                                        <p className="text-lg">{item.title}</p>
-                                    </Link>
-                                </li>
-                            ))
-                        }
-                    </ul>
-                </div>
-            </div>
+                }
+            />
         );
     }
 

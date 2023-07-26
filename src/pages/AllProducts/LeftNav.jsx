@@ -1,19 +1,19 @@
 import React from 'react';
 import Dropdown from '../../components/Dropdown/Dropdown';
 import icon from '../../assets/icon/cd-filter.svg';
+import arrow from '../../assets/icon/cd-arrow-right-2.svg';
 
 const LeftNav = () => {
     const menuList = <ul className='mt-4 bg-white px-8 py-4 lg:py-0 text-[#475569] flex flex-col gap-4'>
         <li>
-            <Dropdown
-                ddTitle='Electronics'
-                ddIcon={true}
-                open={true}
-                ddBody={<ul className='w-full ml-8 list-disc mt-4 flex flex-col gap-4'>
-                    <li>Computer Accessories</li>
-                    <li>Mobile Accessories</li>
-                </ul>}
-            />
+            <span className='flex justify-between items-center'>
+                Electronics
+                <img src={arrow} alt="arrow" className='rotate-90' />
+            </span>
+            <ul className='w-full ml-8 list-disc mt-4 flex flex-col gap-4'>
+                <li>Computer Accessories</li>
+                <li>Mobile Accessories</li>
+            </ul>
         </li>
         <li>Shoe</li>
         <li>Watch</li>
@@ -37,7 +37,6 @@ const LeftNav = () => {
                 <img className='w-5 mr-2' src={icon} alt='icon' />
                 <Dropdown
                     ddTitle='Sort and Filter'
-                    ddIcon={true}
                     open={false}
                     ddBody={menuList}
                     ddPosition='absolute top-10 w-full text-left'

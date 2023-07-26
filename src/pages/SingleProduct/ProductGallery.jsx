@@ -10,21 +10,21 @@ const ProductGallery = () => {
         return (
             <img
                 onClick={() => setPresentImage(imgSrc)}
-                className='border rounded-xl cursor-pointer duration-200 active:scale-75'
+                className='border rounded-xl cursor-pointer duration-200 active:scale-75 w-full'
                 src={imgSrc} alt="product image"
             />
         );
     };
 
     return (
-        // to-do: responsive 
-        <div className='w-full flex gap-4'>
-            <aside className='w-1/4 flex flex-col gap-4'>
+        // to-do: make array for image
+        <div className='w-full h-full flex gap-4'>
+            <aside className='w-1/4 h-full flex flex-col gap-4'>
                 {imgFn(img1)}
                 {imgFn(img2)}
                 {imgFn(img3)}
             </aside>
-            <aside className='flex-1 w-full'>
+            <aside className='w-full flex-1'>
                 <img
                     className='w-full h-full border rounded-xl'
                     src={presentImage} alt="product image"

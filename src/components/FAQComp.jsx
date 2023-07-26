@@ -7,7 +7,7 @@ const FAQComp = ({ title, paragraph }) => {
     return <button
         onClick={() => setOpen(!isOpen)}
         onBlur={() => setOpen(false)}
-        className="w-full lg:w-96 py-4 border-b-2 cursor-pointer"
+        className="w-full lg:w-96 py-3 border-b-2 cursor-pointer"
     >
         <div
             className={`flex gap-6 items-center duration-500
@@ -22,8 +22,8 @@ const FAQComp = ({ title, paragraph }) => {
             <h4 className="flex-1 text-lg lg:text-xl font-semibold">{title}</h4>
         </div>
         <p
-            className={`h-0 transition-all duration-1000 text-left pt-4 lg:ml-16
-            ${!isOpen ? 'scale-y-0 overflow-hidden opacity-0' : 'scale-y-100 h-max opacity-100'}`}
+            className={`transition-all duration-500 text-left lg:ml-16
+            ${!isOpen ? 'overflow-hidden opacity-0 h-0' : 'opacity-100 h-full'}`}
         >
             {paragraph}
         </p>

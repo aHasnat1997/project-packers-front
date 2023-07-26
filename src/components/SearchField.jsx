@@ -1,4 +1,3 @@
-// to-do: search field size and icon
 export const SearchField = ({ fieldStyle, placeholder, icon }) => {
     return <div className="relative">
         <img

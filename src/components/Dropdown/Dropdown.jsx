@@ -1,37 +1,39 @@
 import React, { useState } from 'react';
-import icon from '../../assets/icon/cd-arrow-right-2.svg';
+import { OutSideClick } from '../OutSideClick';
 
 const Dropdown = ({
     ddTitle = String,
-    ddIcon = Boolean,
     ddBody = Object,
     open = Boolean,
     ddPosition = String,
     btnStyle = String
 }) => {
-    const [isOpen, satOpen] = useState(open ? true : false)
+    const [isOpen, setOpen] = useState(open ? true : false)
 
     return (
         <div
-            // onBlur={() => satOpen(false)}
-            className={`relative z-20 flex-1 w-full`}
+            className={`relative z-10 flex-1 w-full`}
         >
             <button
-                onClick={() => satOpen(!isOpen)}
-                className={`w-full flex justify-between items-center ${btnStyle}`}
+                onClick={() => setOpen(!isOpen)}
+                className={`w-full ${btnStyle}`}
             >
-                <span>{ddTitle}</span>
-                <span className={`${!ddIcon && 'hidden'}`}>
-                    <img className={`duration-300 ${isOpen ? 'rotate-[270deg]' : 'rotate-90'}`} src={icon} alt="icon" />
-                </span>
+                {ddTitle}
             </button>
-            <div
-                className={`w-full transition-all duration-1000 
-                ${!isOpen ? 'opacity-0 hidden' : 'opacity-100'}
-                ${ddPosition}`}
-            >
-                {ddBody}
-            </div>
+
+            <OutSideClick
+                show={isOpen}
+                onClickOutside={() => setOpen(false)}
+                body={
+                    <div
+                        className={`w-full transition-all duration-1000 
+                        ${!isOpen ? 'opacity-0 hidden' : 'opacity-100'}
+                        ${ddPosition}`}
+                    >
+                        {ddBody}
+                    </div>
+                }
+            />
         </div>
     );
 };

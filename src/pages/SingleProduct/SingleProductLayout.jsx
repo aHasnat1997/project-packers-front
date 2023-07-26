@@ -19,7 +19,7 @@ const SingleProductLayout = () => {
         <>
             <Breadcrumb />
             <section className='section-div w-full'>
-                <div className='min-w-max flex flex-col lg:flex-row justify-between gap-8'>
+                <div className='w-full flex flex-col lg:flex-row justify-between gap-8'>
                     <aside className='flex-1'>
                         <ProductGallery />
                     </aside>
@@ -27,23 +27,24 @@ const SingleProductLayout = () => {
                         <ProductInfo />
                     </aside>
                 </div>
-                {/* to-do: width */}
-                <div className='mt-12'>
-                    <h3 className='text-2xl font-semibold'>
-                        {
-                            product.name
-                        }
-                    </h3>
-                    <div className='mt-4'>
-                        {
-                            product.description.map((paragraph, i) => (
-                                <p key={i} className='mt-2'>
-                                    {
-                                        paragraph
-                                    }
-                                </p>
-                            ))
-                        }
+                <div className='mt-12 grid lg:grid-cols-3'>
+                    <div className='lg:col-span-2'>
+                        <h3 className='text-2xl font-semibold'>
+                            {
+                                product.name
+                            }
+                        </h3>
+                        <div className='mt-4'>
+                            {
+                                product.description.map((paragraph, i) => (
+                                    <p key={i} className='mt-2'>
+                                        {
+                                            paragraph
+                                        }
+                                    </p>
+                                ))
+                            }
+                        </div>
                     </div>
                 </div>
             </section>
