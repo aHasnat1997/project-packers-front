@@ -51,6 +51,15 @@
     /* -webkit-text-security: circle; */
 }
 
+input[type="tel"] {
+    border: 0;
+}
+input[type="tel"]:focus {
+    border: 0;
+    outline: none;
+    right: 0;
+}
+
 /* password symbol */
 @font-face {
     font-family: 'fontello';
@@ -68,7 +77,7 @@ input[type="password"] {
 	font-family: "fontello";
 	font-style: normal;
 	font-weight: normal;
-	speak: none;
+	/* speak: none; */
 
 	/* For safety - reset parent styles, that can break glyph codes*/
 	font-variant: normal;
@@ -83,3 +92,5 @@ input[type="password"] {
 	/* add spacing to better separate each image */
 	letter-spacing: 2px;
 }
+
+

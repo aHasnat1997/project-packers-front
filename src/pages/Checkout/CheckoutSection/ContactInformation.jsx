@@ -35,7 +35,7 @@ const ContactInformation = ({ register }) => {
                         defaultCountry="BD"
                         international
                         placeholder="Enter phone number"
-                        className='w-full input-field overflow-hidden bg-white py-2 px-4 mt-3 focus:border-0'
+                        className='w-full input-field overflow-hidden bg-white py-2 px-4 mt-3'
                     />
                 </div>
             </div>

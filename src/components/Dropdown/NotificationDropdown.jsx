@@ -31,7 +31,7 @@ const NotificationDropdown = () => {
             <div className='flex justify-between items-center pb-3 border-b'>
                 <span>Notification</span>
                 <Link
-                    to='/all-products'
+                    to='/notification'
                     className='duration-300 active:scale-90'
                 >
                     <img src={arrow} alt="arrow" />

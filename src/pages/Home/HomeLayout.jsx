@@ -11,7 +11,7 @@ const HomeLayout = () => {
 
     return <>
         <Hero />
-        <YouTubeShots />
+        <YouTubeShots isHome={true} />
         <BrandIcon />
         <TrendingProducts />
         <Works />

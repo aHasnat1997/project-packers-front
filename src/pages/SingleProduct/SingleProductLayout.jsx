@@ -34,7 +34,7 @@ const SingleProductLayout = () => {
                                 product.name
                             }
                         </h3>
-                        <div className='mt-4'>
+                        <div className='mt-4 text-justify'>
                             {
                                 product.description.map((paragraph, i) => (
                                     <p key={i} className='mt-2'>

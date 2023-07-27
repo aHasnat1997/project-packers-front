@@ -9,7 +9,7 @@ const Breadcrumb = () => {
         <nav className='bg-primary'>
             <ul className='max-w py-3 flex items-center gap-1 text-white'>
                 <li className="breadcrumb-item">
-                    <Link to="/" className='text-gray-400'>Home /</Link>
+                    <Link to="/" className='text-gray-400'>Home</Link>
                 </li>
                 {breadcrumbs.map((breadcrumb, index) => (
                     <li
@@ -19,7 +19,7 @@ const Breadcrumb = () => {
                         <Link
                             to={breadcrumb.url}
                         >
-                            {breadcrumb.label}
+                           / {breadcrumb.label}
                         </Link>
                     </li>
                 ))}

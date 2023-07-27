@@ -12,7 +12,7 @@ const ProductList = ({ productArray = Array }) => {
                         <th className='pb-3'>Quantity</th>
                         <th className='pb-3 hidden lg:block'>Price</th>
                     </tr>
-                </thead>
+                </thead> 
                 {
                     productArray.map((product, i) => (
                         <tbody key={i}>
@@ -30,7 +30,7 @@ const ProductList = ({ productArray = Array }) => {
 
                                 </td>
                                 <td>
-                                    <Counter fieldStyle='w-[8rem] py-4 rounded-lg' />
+                                    <Counter fieldStyle='w-[6.5rem] py-3 rounded-lg' />
                                 </td>
                                 <td className='font-semibold invisible lg:visible'>
                                     $ {product.singlePrice}

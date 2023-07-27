@@ -33,23 +33,23 @@ const Footer = () => {
                 <div className="mt-8 lg:mt-0">
                     <h3 className="text-[1.125rem] text-accent font-semibold">Quick Navigation</h3>
                     <ul className="mt-4 lg:mt-8 flex flex-col gap-4">
-                        <li>Home</li>
-                        <li>About us</li>
-                        <li>My Requests</li>
-                        <li>Contact us</li>
-                        <li>Blog</li>
-                        <li>Careers</li>
+                        <li className='hover:underline'><Link to='/'>Home</Link></li>
+                        <li className='hover:underline'><Link to='/about-us'>About us</Link></li>
+                        <li><Link>My Requests</Link></li>
+                        <li><Link>Contact us</Link></li>
+                        <li className='hover:underline'><Link to='/blog'>Blog</Link></li>
+                        <li><Link>Careers</Link></li>
                     </ul>
                 </div>
                 <div className="mt-8 lg:mt-0">
                     <h3 className="text-[1.125rem] text-accent font-semibold">Quick Help</h3>
                     <ul className="mt-4 lg:mt-8 flex flex-col gap-4">
-                        <li>Support Center</li>
-                        <li>How Project Packers Works</li>
-                        <li>Shipping & Delivery</li>
-                        <li>Cancellation & Refund</li>
-                        <li>FAQs</li>
-                        <li>Live Chat Support</li>
+                        <li><Link>Support Center</Link></li>
+                        <li><Link>How Project Packers Works</Link></li>
+                        <li><Link>Shipping & Delivery</Link></li>
+                        <li><Link>Cancellation & Refund</Link></li>
+                        <li className='hover:underline'><Link to='/faq'>FAQs</Link></li>
+                        <li><Link>Live Chat Support</Link></li>
                     </ul>
                 </div>
                 <div className="mt-8 lg:mt-0">
