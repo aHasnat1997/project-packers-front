@@ -90,9 +90,8 @@ const OrderSection = () => {
                 <p className='font-semibold'>$ {total}</p>
             </div>
 
-            {/* <input type="submit" value="Submit" className='btn-primary w-full py-3 mt-8' /> */}
             <Modal
-                btnName='Submit'
+                btnName={<input type="submit" value="Submit" />}
                 btnType='btn-primary w-full py-3 mt-8'
                 body={
                     <>

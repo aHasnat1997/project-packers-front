@@ -2,6 +2,7 @@ import React from 'react';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 
+
 const ContactInformation = ({ register }) => {
 
     return (
@@ -9,7 +10,7 @@ const ContactInformation = ({ register }) => {
             <h3 className='text-xl text-primary'>Contact information</h3>
             <div className='mt-6'>
                 <div>
-                    <label htmlFor="email">Email Address</label>
+                    <label>Email Address</label>
                     <input
                         {...register("email")}
                         type="email"
@@ -19,7 +20,7 @@ const ContactInformation = ({ register }) => {
                     />
                 </div>
                 <div className='mt-4'>
-                    <label htmlFor="email">Phone number <span className='text-red-700'>*</span></label>
+                    <label>Phone number <span className='text-red-700'>*</span></label>
                     <PhoneInput
                         {...register('phone')}
                         defaultCountry="BD"
@@ -29,7 +30,7 @@ const ContactInformation = ({ register }) => {
                     />
                 </div>
                 <div className='mt-4'>
-                    <label htmlFor="email">Alternative phone number (Optional)</label>
+                    <label>Alternative phone number (Optional)</label>
                     <PhoneInput
                         {...register('altPhone')}
                         defaultCountry="BD"
@@ -108,13 +109,13 @@ const ContactInformation = ({ register }) => {
                 <div className='mt-4 w-full flex flex-col gap-3'>
                     <label htmlFor="deliveryInstructions">Delivery Instructions (Optional)</label>
                     <textarea
-                        {...register("zipCode")}
+                        {...register("deliveryInstructions")}
                         name="deliveryInstructions"
                         id="deliveryInstructions"
                         cols="30"
                         rows="5"
                         placeholder='Delivery Instructions'
-                        className='border-2 rounded-lg text-[14px] p-4'
+                        className='border-2 rounded-lg text-[14px] p-4 duration-200 focus:outline-none focus:shadow-xl'
                     />
                 </div>
             </div>

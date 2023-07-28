@@ -52,9 +52,11 @@ const Nav = ({ isOpen, setOpen }) => {
                                     ddPosition='absolute top-16 right-[20rem]'
                                     ddBody={<ProductsDropdown />}
                                 />
-                                <button>
+                                <Link
+                                    to='/account/order'
+                                >
                                     <img src={avatar} alt='icon' />
-                                </button>
+                                </Link>
                                 <p>Kodu</p>
                             </div>
                             :
@@ -139,7 +141,7 @@ const Nav = ({ isOpen, setOpen }) => {
                 alt: 'avatar',
                 title: 'My Account',
                 padding: 0,
-                href: '/'
+                href: '/account/order'
             },
             {
                 id: 2,
@@ -166,7 +168,6 @@ const Nav = ({ isOpen, setOpen }) => {
                 href: '/'
             },
         ];
-
 
         return (
             <OutSideClick

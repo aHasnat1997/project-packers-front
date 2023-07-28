@@ -18,9 +18,9 @@ const SingleProductLayout = () => {
     return (
         <>
             <Breadcrumb />
-            <section className='section-div w-full'>
-                <div className='w-full flex flex-col lg:flex-row justify-between gap-8'>
-                    <aside className='flex-1'>
+            <section className='section-div w-full h-full'>
+                <div className='w-full lg:h-[70vh] flex flex-col lg:flex-row gap-8'>
+                    <aside className='h-full lg:flex-1'>
                         <ProductGallery />
                     </aside>
                     <aside>

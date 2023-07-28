@@ -16,6 +16,10 @@ import SingleBlogLayout from "../pages/SingleBlog/SingleBlogLayout";
 import AboutUs from "../pages/AboutUs/AboutUs";
 import FAQPage from "../pages/FAQ/FAQPage";
 import Notification from "../pages/Notification/Notification";
+import MyAccountLayout from "../pages/MyAccount/MyAccountLayout";
+import ProtectedRoute from "./ProtectedRoute";
+import OrdersTable from "../pages/MyAccount/OutletComponents/OrdersTable";
+import AccountDetails from "../pages/MyAccount/OutletComponents/AccountDetails";
 
 export const router = createBrowserRouter([
     {
@@ -61,6 +65,20 @@ export const router = createBrowserRouter([
             {
                 path: '/notification',
                 element: <Notification />
+            },
+            {
+                path: '/account',
+                element: <ProtectedRoute><MyAccountLayout /></ProtectedRoute>,
+                children: [
+                    {
+                        path: '/account/order',
+                        element: <ProtectedRoute><OrdersTable /></ProtectedRoute>
+                    },
+                    {
+                        path: '/account/details',
+                        element: <ProtectedRoute><AccountDetails /></ProtectedRoute>
+                    }
+                ]
             }
         ]
     },

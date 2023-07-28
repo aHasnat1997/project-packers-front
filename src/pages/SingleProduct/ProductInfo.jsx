@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const ProductInfo = () => {
     return (
-        <div className='max-w-[100vw] lg:w-full h-full border rounded-xl px-5'>
+        <div className='w-full h-full border rounded-xl px-5'>
             <div className='w-full py-4 border-b flex justify-between items-center'>
                 <h4 className='md:text-lg'>Product Price</h4>
                 <h4 className='text-2xl font-semibold'>$450.00</h4>

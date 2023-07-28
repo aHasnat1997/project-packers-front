@@ -19,14 +19,17 @@ const ProductGallery = () => {
     return (
         // to-do: make array for image
         <div className='w-full h-full flex gap-4'>
-            <aside className='w-1/4 h-full flex flex-col gap-4'>
+            <aside className='w-1/4 lg:h-full flex flex-col gap-4 overflow-auto no-scrollbar'>
+                {imgFn(img1)}
+                {imgFn(img2)}
+                {imgFn(img3)}
                 {imgFn(img1)}
                 {imgFn(img2)}
                 {imgFn(img3)}
             </aside>
-            <aside className='w-full flex-1'>
+            <aside className='w-full h-full flex-1'>
                 <img
-                    className='w-full h-full border rounded-xl'
+                    className='h-full w-full border rounded-xl'
                     src={presentImage} alt="product image"
                 />
             </aside>
