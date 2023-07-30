@@ -16,7 +16,7 @@ const Modal = ({ body, btnName, btnType }) => {
             {showModal && (
                 <>
                     <div className="fixed top-0 right-0 left-0 bottom-0 z-40 bg-black bg-opacity-70" />
-                    <div className="flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none py-4">
+                    <div className="flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none py-4 no-scrollbar">
                         <div className="relative w-auto my-6 mx-auto max-w-3xl">
                             <OutSideClick
                                 show={showModal}

@@ -2,11 +2,12 @@ import React from 'react';
 import google from '../../../assets/icon/google-icon.svg';
 import facebook from '../../../assets/icon/facebook-icon.svg';
 import apple from '../../../assets/icon/apple-icon.svg';
-import { useForm } from 'react-hook-form';
+import { Controller, useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTitle } from '../../../Hooks/useTitle';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
+import PasswordSymbol from '../../../components/PasswordSymbol';
 
 const SingUpPage = () => {
     useTitle('Sing up');
@@ -63,12 +64,17 @@ const SingUpPage = () => {
                     <div className='mt-8'>
                         <label className='text-white mb-2'>Password</label>
                         <br />
-                        {/* to-do: password symbol change */}
-                        <input
+                        {/* <input
                             {...register('password')}
                             type='text'
                             className='w-[30rem] input-field input-pass-icon px-5 py-4'
                             placeholder='Enter Your Password'
+                        /> */}
+                        <Controller
+                            name="password"
+                            defaultValue=""
+                            control={control}
+                            render={({ field }) => <PasswordSymbol width='[30rem]' py='4' placeholder='Enter Your Password' {...field} />}
                         />
                     </div>
                     <div className='w-[30rem] mt-5 flex items-center justify-between'>

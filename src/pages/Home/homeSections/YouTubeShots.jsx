@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Shots from "../../../components/Shots";
 
 const YouTubeShots = ({ isHome = Boolean }) => {
@@ -34,7 +33,7 @@ const YouTubeShots = ({ isHome = Boolean }) => {
 
     return <section
         className={`max-w flex gap-4 w-full px-5 overflow-scroll no-scrollbar 
-            ${isHome && '-mb-24 lg:-mb-40 relative -top-20 lg:-top-36'}`}
+            ${isHome && '-mb-24 relative -top-24'}`}
     >
         {
             slides.map((slide, i) => <Shots key={i} videoId={slide.videoId} />)

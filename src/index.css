@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .max-w{
-    @apply max-w-screen-2xl mx-auto px-4;
+    @apply max-w-screen-xl mx-auto px-4;
 }
 
 .section-div{

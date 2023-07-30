@@ -1,14 +1,15 @@
 import React from 'react';
-import { useForm } from 'react-hook-form';
+import { Controller, useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import lock from '../../../assets/icon/circle-lock.svg';
 import { useTitle } from '../../../Hooks/useTitle';
+import PasswordSymbol from '../../../components/PasswordSymbol';
 
 const NewPasswordPage = () => {
     useTitle('New Password');
     const navigate = useNavigate();
 
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, control } = useForm();
     const onSubmit = data => {
         console.log(data);
         navigate('/auth/log-in');
@@ -24,29 +25,39 @@ const NewPasswordPage = () => {
                     <div className='mt-8'>
                         <label className='text-white mb-2'>New Password</label>
                         <br />
-                        {/* to-do: password symbol change */}
-                        <input
+                        {/* <input
                             {...register('newPassword')}
                             type='text'
                             className='w-full input-field input-pass-icon px-5 py-4'
                             placeholder='Enter Your Password'
+                        /> */}
+                        <Controller
+                            name="password"
+                            defaultValue=""
+                            control={control}
+                            render={({ field }) => <PasswordSymbol width='[30rem]' py='4' placeholder='Enter Your Password' {...field} />}
                         />
                     </div>
-                    <div className='mt-8'>
+                    <div className='mt-16'>
                         <label className='text-white mb-2'>Confirm  Password</label>
                         <br />
-                        {/* to-do: password symbol change */}
-                        <input
+                        {/* <input
                             {...register('confirmPassword')}
                             type='text'
                             className='w-full input-field input-pass-icon px-5 py-4'
                             placeholder='Enter Your Password'
+                        /> */}
+                        <Controller
+                            name="confirmPassword"
+                            defaultValue=""
+                            control={control}
+                            render={({ field }) => <PasswordSymbol width='[30rem]' py='4' placeholder='Enter Your Password' {...field} />}
                         />
                     </div>
                     <input
                         type='submit'
                         value='Save Password'
-                        className='w-full btn-primary py-4 px-5 mt-5'
+                        className='w-[30rem] btn-primary py-4 px-5 mt-20'
                     />
                 </form>
             </div>
