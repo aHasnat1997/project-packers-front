@@ -3,11 +3,8 @@ import Modal from '../../../components/Modal';
 import { SearchField } from '../../../components/SearchField';
 import HomeModalBodyOne from './HomeModalBodyOne';
 import search from '../../../assets/icon/cd-search-01.svg';
-import { useState } from 'react';
 
 const Hero = () => {
-    const [searchValue, setSearchValue] = useState('')
-
     return <section className="w-full bg-primary relative overflow-hidden">
         <div className="max-w relative h-full lg:flex justify-between">
             <div className='lg:w-[43rem] mt-24'>
@@ -16,7 +13,7 @@ const Hero = () => {
                 <div className='mt-8 lg:flex items-center relative z-10'>
                     <SearchField
                         placeholder={'Paste the URL of the product'}
-                        fieldStyle='w-full lg:w-[26rem] py-[1rem]'
+                        fieldStyle='input-field w-full lg:w-[26rem] py-[1rem]'
                         icon={search}
                         
                     />

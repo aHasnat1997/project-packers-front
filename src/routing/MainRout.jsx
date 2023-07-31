@@ -20,6 +20,9 @@ import MyAccountLayout from "../pages/MyAccount/MyAccountLayout";
 import ProtectedRoute from "./ProtectedRoute";
 import OrdersTable from "../pages/MyAccount/OutletComponents/OrdersTable";
 import AccountDetails from "../pages/MyAccount/OutletComponents/AccountDetails";
+import DashboardMainLayout from "../Dashboard/DashboardMainLayout";
+import DashboardLayout from "../Dashboard/DDPages/DashboardPage/DashboardLayout";
+import OrderLayout from "../Dashboard/DDPages/OrderPage/OrderLayout";
 
 export const router = createBrowserRouter([
     {
@@ -105,6 +108,20 @@ export const router = createBrowserRouter([
             {
                 path: '/auth/new-password',
                 element: <NewPasswordPage />
+            }
+        ]
+    },
+    {
+        path: '/admin',
+        element: <ProtectedRoute><DashboardMainLayout /></ProtectedRoute>,
+        children: [
+            {
+                path: '/admin/dashboard',
+                element: <ProtectedRoute><DashboardLayout /></ProtectedRoute>
+            },
+            {
+                path: '/admin/order',
+                element: <ProtectedRoute><OrderLayout /></ProtectedRoute>
             }
         ]
     }

@@ -69,7 +69,7 @@ const HomeModalBodyOne = () => {
                                 <SearchField
                                     placeholder=''
                                     icon={internet}
-                                    fieldStyle={'w-full py-3'}
+                                    fieldStyle={'input-field w-full py-3'}
                                 />
                             </span>
                             <img

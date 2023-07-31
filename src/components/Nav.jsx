@@ -27,7 +27,7 @@ const Nav = ({ isOpen, setOpen }) => {
                 <div className="flex items-center justify-between gap-2 lg:gap-4">
                     <SearchField
                         placeholder='Paste the URL of the product'
-                        fieldStyle='w-[40rem] py-[.7rem]'
+                        fieldStyle='input-field w-[40rem] py-[.7rem]'
                         icon={searchYellow}
                     />
                     <button className="text-primary text-base">Support</button>
@@ -104,7 +104,7 @@ const Nav = ({ isOpen, setOpen }) => {
                     }
                 </button>
                 <Link to='/'><Logo isNav={true} /></Link>
-                <SearchField placeholder={'Paste the URL of the product'} icon={searchYellow} fieldStyle='w-full py-3' />
+                <SearchField placeholder={'Paste the URL of the product'} icon={searchYellow} fieldStyle='input-field w-full py-3' />
                 {
                     user ?
                         <Dropdown

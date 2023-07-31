@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .max-w{
-    @apply max-w-screen-xl mx-auto px-4;
+    @apply max-w-screen-2xl mx-auto px-4;
 }
 
 .section-div{
@@ -37,6 +37,10 @@
     @apply border-2 rounded-full text-[14px] duration-200 focus:outline-none focus:shadow-xl;
 }
 
+.input-field-dd{
+    @apply border-2 rounded-xl text-[14px] duration-200 focus:outline-none focus:shadow-xl;
+}
+
 .no-scrollbar::-webkit-scrollbar {
     display: none;
 }
@@ -60,16 +64,6 @@ input[type="tel"]:focus {
     right: 0;
 }
 
-/* password symbol */
-.custom-password {
-    /* Set the width and height to match the size of your custom SVG */
-    
-    /* Set the background-image to the Base64 encoded SVG */
-    /* background-image: url('data:image/svg+xml;base64, PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggaWQ9IlZlY3RvciAoU3Ryb2tlKSIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04LjcwMDMzIDAuNjI5NDE3QzEwLjkwMjEgLTAuNjU0ODgzIDEzLjcyODIgMC4wODg4MjMyIDE1LjAxMjUgMi4yOTA1M0wyMCAxMC44NDAzTDI0Ljk4NzUgMi4yOTA1M0MyNi4yNzE4IDAuMDg4ODIzMiAyOS4wOTc5IC0wLjY1NDg4MyAzMS4yOTk3IDAuNjI5NDE3QzMzLjUwMTUgMS45MTM3MiAzNC4yNDUyIDQuNzM5NjkgMzIuOTYwOCA2Ljk0MTM5TDI4LjAzNTUgMTUuMzg0OEgzNS4zODQ2QzM3LjkzMzYgMTUuMzg0OCA0MCAxNy40NTExIDQwIDIwQzQwIDIyLjU0ODkgMzcuOTMzNiAyNC42MTUyIDM1LjM4NDYgMjQuNjE1MkgyOC4wMzU1TDMyLjk2MDggMzMuMDU4NkMzNC4yNDUyIDM1LjI2MDMgMzMuNTAxNSAzOC4wODYzIDMxLjI5OTcgMzkuMzcwNkMyOS4wOTc5IDQwLjY1NDkgMjYuMjcxOCAzOS45MTEyIDI0Ljk4NzUgMzcuNzA5NUwyMCAyOS4xNTk3TDE1LjAxMjUgMzcuNzA5NUMxMy43MjgyIDM5LjkxMTIgMTAuOTAyMSA0MC42NTQ5IDguNzAwMzMgMzkuMzcwNkM2LjQ5ODU0IDM4LjA4NjMgNS43NTQ4IDM1LjI2MDMgNy4wMzkxNSAzMy4wNTg2TDExLjk2NDUgMjQuNjE1Mkg0LjYxNTM4QzIuMDY2MzggMjQuNjE1MiAwIDIyLjU0ODkgMCAyMEMwIDE3LjQ1MTEgMi4wNjYzOCAxNS4zODQ4IDQuNjE1MzggMTUuMzg0OEgxMS45NjQ1TDcuMDM5MTUgNi45NDEzOUM1Ljc1NDggNC43Mzk2OSA2LjQ5ODU0IDEuOTEzNzIgOC43MDAzMyAwLjYyOTQxN1oiIGZpbGw9IiMwRDNENEIiLz4KPC9zdmc+Cg=='); */
-    /* Hide the default password dots/bullets */
-    -webkit-text-security: disc;
-    -moz-text-security: disc;
-    /* text-security: disc; */
-    /* Optionally, hide the cursor when typing in the password field */
-    caret-color: transparent;
+.dd-section-div{
+    @apply w-full pt-24 pb-8 pl-80 pr-8;
 }
