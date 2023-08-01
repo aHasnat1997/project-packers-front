@@ -1,8 +1,14 @@
 import { useState } from "react";
 import { OutSideClick } from "./OutSideClick";
 
+/**
+ * @param {Object} body - Modal body
+ * @param {String} btnName - Modal Opening Button Name
+ * @param {String} btnType - Modal Opening Button Style 
+ * @returns - Open Modal 
+ */
 
-const Modal = ({ body, btnName, btnType }) => {
+const Modal = ({ body = Object, btnName = String, btnType = String }) => {
     const [showModal, setShowModal] = useState(false);
 
     return (

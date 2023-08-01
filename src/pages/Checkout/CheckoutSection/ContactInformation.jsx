@@ -2,6 +2,10 @@ import React from 'react';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 
+/**
+ * @param {} register react-hook-form hook 
+ * @returns Contact Information
+ */
 
 const ContactInformation = ({ register }) => {
 

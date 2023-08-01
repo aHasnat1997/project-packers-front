@@ -19,7 +19,7 @@ const DDNav = () => {
             id: 1,
             title: 'Dashboard',
             icon: dashboard,
-            to: '/admin/dashboard',
+            to: '/admin',
             isDropdown: null
         },
         {
@@ -62,14 +62,14 @@ const DDNav = () => {
             id: 4,
             title: 'Customers',
             icon: userList,
-            to: '/admin/userList',
+            to: '/admin/customers',
             isDropdown: null
         },
         {
             id: 5,
             title: 'Support',
             icon: chat,
-            to: '/admin/chat',
+            to: '/admin/support',
             isDropdown: null
         },
         {
@@ -82,8 +82,8 @@ const DDNav = () => {
     ]
 
     return (
-        <nav className='w-[16%] bg-[#efefef] fixed top-0 left-0 bottom-0 pt-24 border-r'>
-            <div className='w-[18rem]'>
+        <nav className='w-[15%] bg-[#efefef] fixed top-0 left-0 bottom-0 pt-24 border-r'>
+            <div className='w-full pr-3'>
                 <ul>
                     {
                         navList.map(list => (
@@ -93,10 +93,12 @@ const DDNav = () => {
                             >
                                 <NavLink
                                     to={list.to}
+                                    end
                                     className={({ isActive }) => isActive ? 'bg-secondary w-2 h-10 rounded-full' : 'w-2 h-10 rounded-full'}
                                 />
                                 <NavLink
                                     to={list.to}
+                                    end
                                     className={({ isActive }) => isActive ? 'bg-primary text-white w-full rounded-lg px-4' : 'w-full px-4'}
                                 >
                                     {
@@ -109,13 +111,13 @@ const DDNav = () => {
                                                     </div>
                                                     <img src={arrow} alt="arrow" />
                                                 </div>
-                                                <ul className='flex flex-col gap-4 my-2 ml-8'>
+                                                {/* <ul className='flex flex-col gap-4 my-2 ml-8'>
                                                     {
                                                         list.isDropdown.map(drop => <li key={drop.id}>
                                                             <p>{drop.title}</p>
                                                         </li>)
                                                     }
-                                                </ul>
+                                                </ul> */}
                                             </div> :
                                             <div className='flex items-center gap-2 py-2'>
                                                 <img src={list.icon} alt={list.icon} />

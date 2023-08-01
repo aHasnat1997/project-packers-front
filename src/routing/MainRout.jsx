@@ -23,6 +23,12 @@ import AccountDetails from "../pages/MyAccount/OutletComponents/AccountDetails";
 import DashboardMainLayout from "../Dashboard/DashboardMainLayout";
 import DashboardLayout from "../Dashboard/DDPages/DashboardPage/DashboardLayout";
 import OrderLayout from "../Dashboard/DDPages/OrderPage/OrderLayout";
+import AdminProducts from "../Dashboard/DDPages/AdminProductsPage/AdminProducts";
+import Customers from "../Dashboard/DDPages/Customers/Customers";
+import Support from "../Dashboard/DDPages/Support/Support";
+import Staff from "../Dashboard/DDPages/AdminStaff/Staff";
+import AllCustomers from "../Dashboard/DDPages/Customers/AllCustomers";
+import SingleCustomer from "../Dashboard/DDPages/Customers/SingleCustomer";
 
 export const router = createBrowserRouter([
     {
@@ -116,12 +122,38 @@ export const router = createBrowserRouter([
         element: <ProtectedRoute><DashboardMainLayout /></ProtectedRoute>,
         children: [
             {
-                path: '/admin/dashboard',
+                path: '',
                 element: <ProtectedRoute><DashboardLayout /></ProtectedRoute>
             },
             {
-                path: '/admin/order',
+                path: 'order',
                 element: <ProtectedRoute><OrderLayout /></ProtectedRoute>
+            },
+            {
+                path: 'products',
+                element: <ProtectedRoute><AdminProducts /></ProtectedRoute>
+            },
+            {
+                path: 'customers',
+                element: <ProtectedRoute><Customers /></ProtectedRoute>,
+                children: [
+                    {
+                        path: '',
+                        element: <ProtectedRoute><AllCustomers /></ProtectedRoute>
+                    },
+                    {
+                        path: ':id',
+                        element: <ProtectedRoute><SingleCustomer /></ProtectedRoute>
+                    }
+                ]
+            },
+            {
+                path: 'support',
+                element: <ProtectedRoute><Support /></ProtectedRoute>
+            },
+            {
+                path: 'staff',
+                element: <ProtectedRoute><Staff /></ProtectedRoute>
             }
         ]
     }

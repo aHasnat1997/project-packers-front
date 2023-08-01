@@ -64,18 +64,18 @@ const SingUpPage = () => {
                     <div className='mt-8'>
                         <label className='text-white mb-2'>Password</label>
                         <br />
-                        <input
+                        {/* <input
                             {...register('password')}
                             type='text'
                             className='w-[30rem] input-field input-pass-icon px-5 py-4'
                             placeholder='Enter Your Password'
-                        />
-                        {/* <Controller
+                        /> */}
+                        <Controller
                             name="password"
                             defaultValue=""
                             control={control}
                             render={({ field }) => <PasswordSymbol width='[30rem]' py='4' placeholder='Enter Your Password' {...field} />}
-                        /> */}
+                        />
                     </div>
                     <div className='w-[30rem] mt-5 flex items-center justify-between'>
                         <span className='text-white'>

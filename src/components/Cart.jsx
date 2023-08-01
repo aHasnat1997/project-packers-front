@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom";
 
-const Cart = ({ img, title, price, onClickFunction }) => {
+/**
+ * @param {String} img -takes image src
+ * @param {String} title -Title of the cart
+ * @param {Number} price -Product price
+ * @param {Function} onClickFunction -onClick method for button
+ * @returns Cart Component
+ */ 
+
+const Cart = ({ img = String, title = String, price = Number, onClickFunction = Function }) => {
     return <Link to='/product'
         onClick={onClickFunction}
         className='bg-white px-3 pb-8 cursor-pointer flex flex-col justify-center'

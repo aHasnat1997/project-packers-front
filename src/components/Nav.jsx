@@ -104,7 +104,11 @@ const Nav = ({ isOpen, setOpen }) => {
                     }
                 </button>
                 <Link to='/'><Logo isNav={true} /></Link>
-                <SearchField placeholder={'Paste the URL of the product'} icon={searchYellow} fieldStyle='input-field w-full py-3' />
+                <SearchField
+                    placeholder={'Paste the URL of the product'}
+                    icon={searchYellow}
+                    fieldStyle='input-field w-full py-3'
+                />
                 {
                     user ?
                         <Dropdown

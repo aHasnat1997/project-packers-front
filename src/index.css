@@ -10,6 +10,10 @@
     @apply max-w font-Jakarta my-10 lg:my-20; 
 }
 
+.btn{
+    @apply rounded-md duration-200 active:scale-95
+}
+
 .btn-primary{
     @apply bg-secondary font-bold text-primary rounded-full;
 }
@@ -30,7 +34,7 @@
 .btn-secondary:active,
 .btn-outline:active,
 .btn-accent:active{
-    @apply duration-200 scale-[0.95];
+    @apply duration-200 scale-95;
 }
 
 .input-field{
@@ -38,7 +42,7 @@
 }
 
 .input-field-dd{
-    @apply border-2 rounded-xl text-[14px] duration-200 focus:outline-none focus:shadow-xl;
+    @apply border-2 rounded-md text-[14px] focus:outline-none;
 }
 
 .no-scrollbar::-webkit-scrollbar {

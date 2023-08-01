@@ -44,18 +44,18 @@ const LoginPage = () => {
                     <div className='mt-4'>
                         <label className='text-white mb-2'>Password</label>
                         <br />
-                        <input
+                        {/* <input
                             {...register('password')}
                             type='password'
                             className='w-[30rem] input-field px-5 py-4 custom-password'
                             placeholder='Enter Your Password'
-                        />
-                        {/* <Controller
+                        /> */}
+                        <Controller
                             name="password"
                             defaultValue=""
                             control={control}
                             render={({ field }) => <PasswordSymbol width='[30rem]' py='4' placeholder='Enter Your Password' {...field} />}
-                        /> */}
+                        />
                     </div>
                     <div className='w-[30rem] mt-20 flex items-center justify-between'>
                         <span className='text-white'>

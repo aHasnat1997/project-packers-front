@@ -1,7 +1,12 @@
 import { useState } from "react";
 
+/**
+ * @param {String} title - FAQ title
+ * @param {String} paragraph - FAQ answer paragraph 
+ * @returns - FAQ single component
+ */
 
-const FAQComp = ({ title, paragraph }) => {
+const FAQComp = ({ title = String, paragraph = String }) => {
     const [isOpen, setOpen] = useState(false);
 
     return <button
