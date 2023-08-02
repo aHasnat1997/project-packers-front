@@ -20,7 +20,7 @@ const SingleCustomer = () => {
     // const id = queryParams.get('id');
 
     const customer = customersData.find(data => data.id === parseInt(id));
-    console.log(customer);
+    // console.log(customer);
 
     const total = customer.orders.reduce((total, price) => {
         return parseFloat((total + price.price).toFixed(2));
@@ -162,7 +162,6 @@ const SingleCustomer = () => {
                     </div>
                 </div>
             </div>
-
         </>
     );
 };

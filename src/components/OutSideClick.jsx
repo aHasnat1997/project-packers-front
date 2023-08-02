@@ -1,6 +1,13 @@
 import { useEffect, useRef } from 'react';
 
-export function OutSideClick({ onClickOutside, show, body }) {
+/**
+ * @param {Function} onClickOutside  click function 
+ * @param {Boolean} onClickOutside  true / false value close
+ * @param {Object} onClickOutside  jsx for body
+ * @returns close body outside click
+ */
+
+export function OutSideClick({ onClickOutside = Function, show = Boolean, body = Object }) {
   const ref = useRef(null);
 
   useEffect(() => {

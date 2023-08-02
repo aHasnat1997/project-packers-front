@@ -428,7 +428,7 @@ const AllUserProvider = ({ children }) => {
     ];
     const [customersData, setCustomersData] = useState(data);
 
-    console.log(customersData);
+    // console.log(customersData);
 
     const customersInfo = { customersData }
 

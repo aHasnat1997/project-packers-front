@@ -69,5 +69,5 @@ input[type="tel"]:focus {
 }
 
 .dd-section-div{
-    @apply w-full pt-24 pb-8 pl-80 pr-8;
+    @apply w-full pt-24 pb-8 pl-[17%] pr-8;
 }

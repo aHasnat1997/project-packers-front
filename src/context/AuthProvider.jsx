@@ -7,7 +7,7 @@ const AuthProvider = ({ children }) => {
     // const [loading, setLoading] = useState(true);
 
     const authInfo = { user, setUser }
-    console.log(user);
+    console.log('user:', user);
 
     return (
         <AuthContext.Provider value={authInfo}>

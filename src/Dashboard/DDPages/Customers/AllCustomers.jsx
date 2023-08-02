@@ -18,11 +18,12 @@ const AllCustomers = () => {
                     <button className='btn'>
                         Export
                     </button>
-                    <button
+                    <Link
+                        to='add-customer'
                         className='btn bg-secondary px-4 py-2'
                     >
                         Add Customer
-                    </button>
+                    </Link>
                 </div>
             </div>
             <div className='mt-8 flex items-center justify-between'>

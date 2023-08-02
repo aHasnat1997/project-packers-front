@@ -1,6 +1,15 @@
 import React, { useState } from 'react';
 import { OutSideClick } from '../OutSideClick';
 
+/**
+ * @param {String} ddTitle Dropdown opener button name or icon
+ * @param {Object} ddBody Dropdown body 
+ * @param {Boolean} open Dropdown default open or close in first load 
+ * @param {String} ddPosition Dropdown body position style
+ * @param {String} btnStyle Dropdown opener button style
+ * @returns Dropdown with content
+ */
+
 const Dropdown = ({
     ddTitle = String,
     ddBody = Object,

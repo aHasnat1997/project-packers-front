@@ -29,6 +29,7 @@ import Support from "../Dashboard/DDPages/Support/Support";
 import Staff from "../Dashboard/DDPages/AdminStaff/Staff";
 import AllCustomers from "../Dashboard/DDPages/Customers/AllCustomers";
 import SingleCustomer from "../Dashboard/DDPages/Customers/SingleCustomer";
+import AddNewCustomer from "../Dashboard/DDPages/Customers/AddNewCustomer";
 
 export const router = createBrowserRouter([
     {
@@ -144,6 +145,10 @@ export const router = createBrowserRouter([
                     {
                         path: ':id',
                         element: <ProtectedRoute><SingleCustomer /></ProtectedRoute>
+                    },
+                    {
+                        path: 'add-customer',
+                        element: <ProtectedRoute><AddNewCustomer /></ProtectedRoute>
                     }
                 ]
             },
