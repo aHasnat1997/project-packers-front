@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { AllUserContext } from '../../../context/AllUserProvider';
-import { Link, useLocation, useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import arrow from '../../../assets/icon/cd-arrow-left-01.svg';
 import cd_delete from '../../../assets/icon/cd-delete-01.svg';
 import arrow_left from '../../../assets/icon/cd-arrow-left-2.svg';
@@ -15,14 +15,8 @@ import CopyButton from '../../../components/CopyButton';
 const SingleCustomer = () => {
     const { customersData } = useContext(AllUserContext);
     const { id } = useParams();
-    // const location = useLocation();
-    // const queryParams = new URLSearchParams(location.search);
-    // const id = queryParams.get('id');
-
-    const customer = customersData.find(data => data.id === parseInt(id));
-    // console.log(customer);
-
-    const total = customer.orders.reduce((total, price) => {
+    const customer = customersData?.find(data => data.id === parseInt(id));
+    const total = customer?.orders?.reduce((total, price) => {
         return parseFloat((total + price.price).toFixed(2));
     }, 0);
 
@@ -39,7 +33,7 @@ const SingleCustomer = () => {
                     </Link>
                     <div>
                         <p className='text-gray-400'>Back to customers</p>
-                        <h2 className='text-3xl font-semibold'>{customer.name}</h2>
+                        <h2 className='text-3xl font-semibold'>{customer?.name}</h2>
                     </div>
                 </div>
                 <div className='flex items-center gap-4'>
@@ -115,7 +109,7 @@ const SingleCustomer = () => {
                         </thead>
                         <tbody>
                             {
-                                customer.orders.map(data => <tr key={data.id} className='border-y'>
+                                customer?.orders?.map(data => <tr key={data.id} className='border-y'>
                                     <td className='py-4 px-6'><input type='checkbox' /></td>
                                     <td className='py-4 px-6 flex items-center gap-2'>
                                         <img
@@ -141,10 +135,10 @@ const SingleCustomer = () => {
                             <img src={cancel} alt="cancel" />
                         </div>
                         <div className='flex items-center justify-between'>
-                            <h5 className='text-accent'>{customer.email}</h5>
-                            <CopyButton textToCopy={customer.email} />
+                            <h5 className='text-accent'>{customer?.email}</h5>
+                            <CopyButton textToCopy={customer?.email} />
                         </div>
-                        <h5>{customer.phone}</h5>
+                        <h5>{customer?.phone}</h5>
                     </div>
                     <div className='p-5 flex flex-col gap-5 border-b'>
                         <div className='flex items-center justify-between'>
@@ -152,8 +146,8 @@ const SingleCustomer = () => {
                             <p className='text-accent'>Edit</p>
                         </div>
                         <div className='flex items-center justify-between'>
-                            <h5>{customer.location}</h5>
-                            <CopyButton textToCopy={customer.location} />
+                            <h5>{customer?.location}</h5>
+                            <CopyButton textToCopy={customer?.location} />
                         </div>
                     </div>
                     <div className='p-5 flex flex-col gap-5'>

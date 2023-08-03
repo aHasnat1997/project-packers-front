@@ -36,8 +36,8 @@ const DDHeader = () => {
                     />
                     <div className='flex items-center gap-2'>
                         {/* <img src={avatar} alt="avatar" /> */}
-                        <UserIcon firstName='Kodu' lastName='Azad' />
-                        <span>Kodu Azad</span>
+                        <UserIcon firstName='Kodu' lastName='' />
+                        <span>Kodu</span>
                     </div>
                 </div>
             </div>

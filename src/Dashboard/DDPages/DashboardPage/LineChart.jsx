@@ -32,7 +32,7 @@ const LineChart = ({ datasets, width, height }) => {
             // Draw lines and fill colors with constant opacity
             datasets.forEach((data, index) => {
                 const color = getRandomColor();
-                const opacity = 0.2; // Set the opacity here
+                const opacity = 0.1; // Set the opacity here
                 const fillColor = hexToRGBA(color, opacity);
 
                 context.strokeStyle = color;

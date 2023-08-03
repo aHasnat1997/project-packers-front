@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import UserIcon from '../../../components/UserIcon';
 
 /**
@@ -16,6 +16,19 @@ const StaffModalBody = ({
     access = String,
     role = String
 }) => {
+    const [accessState, setAccessState] = useState([]);
+    const userAccess = [
+        'Support ticket / life chat',
+        'Product upload and edit',
+        'Order management',
+        'Request management'
+    ];
+
+    // const fromFunction = e => {
+    //     e.preventDefault();
+    //     console.log(e.target.child.value);
+    // };
+
     return (
         <div className='w-[32rem]'>
             <h4 className='font-semibold text-xl p-5 border-b border-gray-100'>
@@ -39,6 +52,29 @@ const StaffModalBody = ({
                         <option value='support'>Support</option>
                     </select>
                 </div>
+            </div>
+            <div className='flex flex-col gap-4 p-5'>
+                <div
+                    // onClick={(e) => e.preventDefault()}
+                    className='flex flex-col gap-4'
+                >
+                    {/* <input type="checkbox" className='mr-2' />Order management */}
+                    {
+                        userAccess.map((acc, i) => (
+                            <div key={i}>
+                                <input
+                                    type="checkbox"
+                                    className='mr-2'
+                                />{acc}
+                            </div>
+                        ))
+                    }
+                </div>
+                <input
+                    type='submit'
+                    value='Save & Change'
+                    className='btn bg-[#3E949A] px-4 py-2 ml-auto'
+                />
             </div>
         </div>
     );

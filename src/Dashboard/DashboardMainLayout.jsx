@@ -1,7 +1,7 @@
 import React from 'react';
 import DDHeader from './DDComponents/DDHeader';
 import { Outlet } from 'react-router-dom';
-import DDNav from './DDComponents/DDNav';
+import DDNav from './DDComponents/DDNav/DDNav';
 import { useTitle } from '../Hooks/useTitle';
 
 const DashboardMainLayout = () => {
