@@ -11,7 +11,7 @@ const OTPVerificationPage = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
-        navigate('/auth/new-password');
+        navigate('/authentication/new-password');
     }
 
     return (

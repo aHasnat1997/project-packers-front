@@ -11,7 +11,7 @@ import UserIcon from '../../components/UserIcon';
 
 const DDHeader = () => {
     return (
-        <div className='border-b fixed z-10 top-0 right-0 left-0 py-4 px-24 bg-white shadow-lg'>
+        <div className='border-b fixed z-10 top-0 right-0 left-0 py-4 px-8 bg-white shadow-lg'>
             <div className='flex items-center justify-between'>
                 <Link to='/'><Logo isNav={true} /></Link>
                 <SearchField

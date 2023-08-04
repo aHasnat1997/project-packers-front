@@ -61,7 +61,7 @@ const Nav = ({ isOpen, setOpen }) => {
                             </div>
                             :
                             <div className='ml-[2.5rem] flex gap-4'>
-                                <Link to='/auth/log-in'>
+                                <Link to='/authentication/log-in'>
                                     <button
                                         className="btn-outline py-[8px] px-[20px]"
                                         onClick={() => savePreviousLocation(location.pathname)}
@@ -69,7 +69,7 @@ const Nav = ({ isOpen, setOpen }) => {
                                         Log In
                                     </button>
                                 </Link>
-                                <Link to='/auth/sing-up'>
+                                <Link to='/authentication/sing-up'>
                                     <button className="btn-secondary py-[8px] px-[20px]">Sign Up</button>
                                 </Link>
                             </div>
@@ -82,7 +82,7 @@ const Nav = ({ isOpen, setOpen }) => {
     const smNav = () => {
         return (
             <div
-                className={`lg:hidden min-w-screen px-4 flex items-center gap-2 duration-300 
+                className={`w-full lg:hidden min-w-screen px-4 flex items-center gap-2 duration-300 
                 ${isOpen ? 'ml-[20rem]' : ''}`}
             >
                 <button
@@ -126,7 +126,7 @@ const Nav = ({ isOpen, setOpen }) => {
                             ddBody={<ProductsDropdown />}
                         />
                         :
-                        <Link to='/auth/log-in' className='ml-auto'>
+                        <Link to='/authentication/log-in' className='ml-auto'>
                             <button
                                 className="btn-secondary w-24 py-2"
                                 onClick={() => savePreviousLocation(location.pathname)}

@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import cd_delete from '../../../../assets/icon/cd-delete-01.svg';
 import { AllRequestProductContext } from '../../../../context/AllRequestProductProvider';
 import StatusBadge from '../../../../components/StatusBadge';
 import assets from '../../../../assets/icon/Assets-caret-down_minor.svg';
@@ -9,6 +8,7 @@ import cd_arrow from '../../../../assets/icon/cd-arrow-data-transfer-vertical-ro
 import select from '../../../../assets/icon/cd-select_minor-01.svg';
 import { SearchField } from '../../../../components/SearchField';
 import { Link } from 'react-router-dom';
+import AdminHeaders from '../../../DDComponents/AdminHeaders';
 
 const AllItemRequest = () => {
   const { requestProductData } = useContext(AllRequestProductContext);
@@ -16,13 +16,7 @@ const AllItemRequest = () => {
 
   return (
     <>
-      <div className='pb-4 border-b flex items-center justify-between'>
-        <h2 className='text-2xl font-semibold'>Item Request</h2>
-        <button className='btn flex items-center gap-2'>
-          <img src={cd_delete} alt="delete" />
-          Delete
-        </button>
-      </div>
+      <AdminHeaders location='item-request' />
       <div className='mt-8 flex items-center justify-between'>
         <div className='flex items-center gap-8'>
           <p
@@ -74,7 +68,7 @@ const AllItemRequest = () => {
               <td className='py-4 px-6 border-b'><input type="checkbox" /></td>
               <td className='py-4 px-6 border-b'># {data?.id}</td>
               <td className='py-4 px-6 border-b'>
-                <Link>{data?.productName}</Link>
+                <Link to={`${data?.id}`}>{data?.productName}</Link>
               </td>
               <td className='py-4 px-6 border-b text-[#3E949A]'>{data?.webSiteLink}</td>
               <td className='py-4 px-6 border-b'>{data?.date}</td>

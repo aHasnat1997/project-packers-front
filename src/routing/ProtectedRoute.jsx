@@ -10,7 +10,7 @@ const ProtectedRoute = ({ children }) => {
     return children;
   }
 
-  return <Navigate to='/auth/log-in' state={{ from: location }} replace />;
+  return <Navigate to='/authentication/log-in' state={{ from: location }} replace />;
 
 }
 export default ProtectedRoute;

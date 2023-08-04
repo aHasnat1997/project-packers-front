@@ -6,26 +6,14 @@ import cd_arrow from '../../../assets/icon/cd-arrow-data-transfer-vertical-round
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { AllUserContext } from '../../../context/AllUserProvider';
+import AdminHeaders from '../../DDComponents/AdminHeaders';
 
 const AllCustomers = () => {
     const { customersData } = useContext(AllUserContext);
 
     return (
         <>
-            <div className='pb-4 border-b flex items-center justify-between'>
-                <h2 className='text-2xl font-semibold'>Customers</h2>
-                <div className='flex items-center gap-4'>
-                    <button className='btn'>
-                        Export
-                    </button>
-                    <Link
-                        to='add-customer'
-                        className='btn bg-secondary px-4 py-2'
-                    >
-                        Add Customer
-                    </Link>
-                </div>
-            </div>
+            <AdminHeaders location='customers' />
             <div className='mt-8 flex items-center justify-between'>
                 <div className='flex items-center gap-8'>
                     <p
@@ -42,7 +30,8 @@ const AllCustomers = () => {
                     <SearchField
                         placeholder={'Search'}
                         icon={search}
-                        fieldStyle='input-field-dd w-96 py-3'
+                        flexOne={true}
+                        fieldStyle='input-field-dd w-full py-3'
                     />
                     <img
                         src={filter}

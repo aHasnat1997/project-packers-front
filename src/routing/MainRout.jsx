@@ -22,7 +22,7 @@ import OrdersTable from "../pages/MyAccount/OutletComponents/OrdersTable";
 import AccountDetails from "../pages/MyAccount/OutletComponents/AccountDetails";
 import DashboardMainLayout from "../Dashboard/DashboardMainLayout";
 import DashboardLayout from "../Dashboard/DDPages/DashboardPage/DashboardLayout";
-import OrderLayout from "../Dashboard/DDPages/OrderPage/OrderLayout";
+import OrderLayout from "../Dashboard/DDPages/OrderPage/AllOrders/OrderLayout";
 import AdminProducts from "../Dashboard/DDPages/AdminProductsPage/AdminProducts";
 import Customers from "../Dashboard/DDPages/Customers/Customers";
 import Support from "../Dashboard/DDPages/Support/Support";
@@ -32,6 +32,7 @@ import SingleCustomer from "../Dashboard/DDPages/Customers/SingleCustomer";
 import AddNewCustomer from "../Dashboard/DDPages/Customers/AddNewCustomer";
 import ItemRequestLayout from "../Dashboard/DDPages/OrderPage/ItemRequest/ItemRequestLayout";
 import AllItemRequest from "../Dashboard/DDPages/OrderPage/ItemRequest/AllItemRequest";
+import SingleItemRequest from "../Dashboard/DDPages/OrderPage/ItemRequest/SingleItemRequest";
 
 export const router = createBrowserRouter([
     {
@@ -95,27 +96,27 @@ export const router = createBrowserRouter([
         ]
     },
     {
-        path: '/auth',
+        path: '/authentication',
         element: <AuthenticationLayout />,
         children: [
             {
-                path: '/auth/log-in',
+                path: '/authentication/log-in',
                 element: <LoginPage />
             },
             {
-                path: '/auth/sing-up',
+                path: '/authentication/sing-up',
                 element: <SingUpPage />
             },
             {
-                path: '/auth/account-recovery',
+                path: '/authentication/account-recovery',
                 element: <AccountRecoveryPage />
             },
             {
-                path: '/auth/otp-verification',
+                path: '/authentication/otp-verification',
                 element: <OTPVerificationPage />
             },
             {
-                path: '/auth/new-password',
+                path: '/authentication/new-password',
                 element: <NewPasswordPage />
             }
         ]
@@ -137,13 +138,24 @@ export const router = createBrowserRouter([
                         element: <ProtectedRoute><AllItemRequest /></ProtectedRoute>
                     },
                     {
-                        path: ':id'
+                        path: ':id',
+                        element: <ProtectedRoute><SingleItemRequest /></ProtectedRoute>
                     }
                 ]
             },
             {
                 path: 'orders',
-                element: <ProtectedRoute><OrderLayout /></ProtectedRoute>
+                element: <ProtectedRoute><OrderLayout /></ProtectedRoute>,
+                children: [
+                    {
+                        path: '',
+                        element: <ProtectedRoute></ProtectedRoute>
+                    },
+                    {
+                        path: ':id',
+                        element: <ProtectedRoute></ProtectedRoute>
+                    }
+                ]
             },
             {
                 path: 'products',

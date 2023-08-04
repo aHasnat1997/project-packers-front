@@ -58,7 +58,7 @@ const StatusBadge = ({ badgeTitle = String }) => {
   return (
     <div>
       <span
-        className={`p-2 rounded-full flex gap-2 items-center ${statusBadgeColor?.bgColor}`}
+        className={`p-2 rounded-full flex gap-2 items-center w-fit ${statusBadgeColor?.bgColor}`}
       >
         <span className={`w-2 h-2 rounded-full ${statusBadgeColor?.dotColor}`} />
         <span>{badgeTitle}</span>

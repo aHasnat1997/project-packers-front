@@ -68,6 +68,14 @@ input[type="tel"]:focus {
     right: 0;
 }
 
+@layer base {
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+}
+
 .dd-section-div{
     @apply w-full pt-24 pb-8 pl-[17%] pr-8;
 }

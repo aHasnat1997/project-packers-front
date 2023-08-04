@@ -9,7 +9,7 @@ const AccountRecoveryPage = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
-        navigate('/auth/otp-verification');
+        navigate('/authentication/otp-verification');
     }
 
     return (
@@ -41,7 +41,7 @@ const AccountRecoveryPage = () => {
                 <p className='text-2xl text-white'>Log in to access your Project Packers Platform for order your products from any USA website.</p>
                 <p className='mt-5 text-white'>
                     Don't have an account yet?
-                    <Link to='/auth/sing-up' className='text-secondary underline ml-2'>Sign up</Link>
+                    <Link to='/authentication/sing-up' className='text-secondary underline ml-2'>Sign up</Link>
                 </p>
             </div>
         </section>

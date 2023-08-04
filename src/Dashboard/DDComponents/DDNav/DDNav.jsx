@@ -32,13 +32,13 @@ const DDNav = () => {
                     id: 1,
                     title: 'Item request',
                     to: '/admin/request',
-                    end: true,
+                    end: false,
                 },
                 {
                     id: 2,
                     title: 'All Orders',
                     to: '/admin/orders',
-                    end: true,
+                    end: false,
                 }
             ]
         },

@@ -15,7 +15,7 @@ const SingUpPage = () => {
     const { register, handleSubmit, control } = useForm();
     const onSubmit = data => {
         console.log(data);
-        navigate('/auth/log-in');
+        navigate('/authentication/log-in');
     }
 
     return (
@@ -24,7 +24,7 @@ const SingUpPage = () => {
                 <p className='text-2xl text-white'>User original product shopping experience  made easy and fun</p>
                 <p className='mt-5 text-white'>
                     Already have an account yet?
-                    <Link to='/auth/log-in' className='text-secondary underline ml-2'>Login</Link>
+                    <Link to='/authentication/log-in' className='text-secondary underline ml-2'>Login</Link>
                 </p>
             </div>
             <div className='lg:w-1/2 pl-28 border-l border-gray-500'>

@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import minus from '../assets/icon/cd-minus-sign-01.svg';
 import plus from '../assets/icon/cd-plus-sign-01.svg';
 
+
+/**
+ * Counter field
+ * @param {String} fieldStyle Counter field style 
+ * @returns 
+ */
 const Counter = ({ fieldStyle = String }) => {
     const [value, setValue] = useState(1);
     

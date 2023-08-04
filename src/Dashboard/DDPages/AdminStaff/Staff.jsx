@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import Modal from '../../../components/Modal';
 import StaffModalBody from './StaffModalBody';
 import caret_down from '../../../assets/icon/caret-down.svg';
+import AdminHeaders from '../../DDComponents/AdminHeaders';
 
 const Staff = () => {
     const { register, handleSubmit, reset } = useForm();
@@ -143,10 +144,7 @@ const Staff = () => {
 
     return (
         <section className='dd-section-div'>
-            <div className='pb-6 border-b flex items-center justify-between'>
-                <h2 className='text-2xl font-semibold'>Staff</h2>
-                <button className='btn bg-secondary px-4 py-2'>Update</button>
-            </div>
+            <AdminHeaders location='staff' />
             <div className='mt-7'>
                 <h4 className='font-semibold text-xl'>Account and Permissions</h4>
                 <p className='text-gray-400'>We can help with that Replace your next meeting with a <br /> short video and get feedback faster .</p>
@@ -200,8 +198,8 @@ const Staff = () => {
                                         btnType='px-4 py-2 border rounded-lg'
                                         body={<StaffModalBody
                                             firstName={data.firstName}
-                                            lastName={data.lastName} 
-                                            access={data.access} 
+                                            lastName={data.lastName}
+                                            access={data.access}
                                             role={data.role}
                                         />}
                                     />

@@ -138,7 +138,7 @@ const HomeModalBodyOne = () => {
                     />
                 </div>
                 <Link
-                    to={user ? '/all-products' : '/auth/log-in'}
+                    to={user ? '/all-products' : '/authentication/log-in'}
                 >
                     <button
                         className='btn-primary w-full py-4 mt-5'

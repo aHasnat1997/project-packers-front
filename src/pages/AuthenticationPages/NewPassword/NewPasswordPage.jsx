@@ -12,7 +12,7 @@ const NewPasswordPage = () => {
     const { register, handleSubmit, control } = useForm();
     const onSubmit = data => {
         console.log(data);
-        navigate('/auth/log-in');
+        navigate('/authentication/log-in');
     }
 
     return (

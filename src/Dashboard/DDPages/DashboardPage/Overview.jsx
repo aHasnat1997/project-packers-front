@@ -1,4 +1,5 @@
 import React from 'react';
+import AdminHeaders from '../../DDComponents/AdminHeaders';
 
 const Overview = () => {
     const orderData = [
@@ -26,7 +27,7 @@ const Overview = () => {
 
     return (
         <section>
-            <h2 className='text-2xl font-semibold pb-4 border-b'>Overview</h2>
+            <AdminHeaders location='overview' />
             <div className='mt-6 pb-5 flex justify-between items-center border-b divide-x'>
                 {
                     orderData.map((data, i) => (
