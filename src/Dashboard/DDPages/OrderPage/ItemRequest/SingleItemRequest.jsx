@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from 'react';
 import { AllRequestProductContext } from '../../../../context/AllRequestProductProvider';
 import { Link, useParams } from 'react-router-dom';
 import { SearchField } from '../../../../components/SearchField';
-import AdminHeaders from '../../../DDComponents/AdminHeaders';
 import arrow from '../../../../assets/icon/cd-arrow-left-01.svg';
 import cd_delete from '../../../../assets/icon/cd-delete-01.svg';
 import CopyButton from '../../../../components/CopyButton';
@@ -49,7 +48,7 @@ const SingleItemRequest = () => {
   //   setTotalPrice({ value1, value2, value3 });
   //   // console.log(value);
   // };
-  console.log(totalPrice);
+  // console.log(totalPrice);
 
   const total = parseFloat(totalPrice.value1) + parseFloat(totalPrice.value2) + parseFloat(totalPrice.value3);
 

@@ -27,7 +27,6 @@ const Overview = () => {
 
     return (
         <section>
-            <AdminHeaders location='overview' />
             <div className='mt-6 pb-5 flex justify-between items-center border-b divide-x'>
                 {
                     orderData.map((data, i) => (

@@ -9,12 +9,12 @@ const LeftNav = () => {
     const { setUser } = useContext(AuthContext);
 
     return (
-        <nav className='min-w-full lg:min-w-[20%] lg:border rounded-lg lg:p-5 flex lg:flex-col gap-5'>
+        <nav className='min-w-full lg:min-w-[23%] lg:border rounded-lg lg:p-5 flex lg:flex-col gap-5'>
             <NavLink
                 to='/account/order'
                 className={({ isActive }) => isActive ? 'btn-primary border-2' : 'btn-outline'}
             >
-                <span className='flex py-3 px-8 w-full'>
+                <span className='flex items-center gap-3 py-3 px-8 w-full'>
                     <img src={products} alt="products" />
                     <span className='hidden lg:block'>Order</span>
                 </span>
@@ -23,7 +23,7 @@ const LeftNav = () => {
                 to='/account/details'
                 className={({ isActive }) => isActive ? 'btn-primary border-2' : 'btn-outline'}
             >
-                <span className='flex py-3 px-8 w-full'>
+                <span className='flex items-center gap-3 py-3 px-8 w-full'>
                     <img src={user} alt="user" />
                     <span className='hidden lg:block'>Account details</span>
                 </span>
@@ -31,7 +31,7 @@ const LeftNav = () => {
             <button
                 onClick={() => setUser(false)}
             >
-                <span className='btn-outline flex py-3 px-8 w-full'>
+                <span className='btn-outline flex items-center gap-3 py-3 px-8 w-full'>
                     <img src={logout} alt="logout" />
                     <span className='hidden lg:block'>Logout</span>
                 </span>

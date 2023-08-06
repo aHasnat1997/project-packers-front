@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import cd_delete from '../../assets/icon/cd-delete-01.svg';
+import { SearchField } from '../../components/SearchField';
+import search from '../../assets/icon/cd-search-01.svg';
+import calendar from '../../assets/icon/cd-calendar.svg';
 
 
 /**
@@ -24,13 +27,21 @@ const AdminHeaders = ({ location = String }) => {
       </div>
     </>
   }
-  
+
   else if (location === 'all-orders') {
     return <>
       <div className='pb-4 border-b flex items-center justify-between'>
         <h2 className='text-2xl font-semibold'>All Orders</h2>
-        <div>
-
+        <div className='flex items-center gap-1'>
+          <SearchField
+            fieldStyle='input-field-dd'
+            placeholder='Search'
+            icon={search}
+          />
+          <div className='input-field-dd py-2 px-4 flex items-center gap-2'>
+            <img src={calendar} alt='calendar' className='w-5 h-5' />
+            <p>March 2021 - February 20222</p>
+          </div>
         </div>
       </div>
     </>

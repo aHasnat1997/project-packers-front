@@ -3,6 +3,7 @@ import Overview from './Overview';
 import LineChart from './LineChart';
 import Heatmap from './Heatmap';
 import DashboardTable from './DashboardTable';
+import AdminHeaders from '../../DDComponents/AdminHeaders';
 
 const DashboardLayout = () => {
     const datasets = [
@@ -11,6 +12,7 @@ const DashboardLayout = () => {
     ];
     return (
         <section className='dd-section-div'>
+            <AdminHeaders location='overview' />
             <Overview />
             <div className='mt-8 flex items-center gap-4'>
                 <LineChart datasets={datasets} width={1000} height={312} />

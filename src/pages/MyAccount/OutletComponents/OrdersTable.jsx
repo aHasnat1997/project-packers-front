@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTitle } from '../../../Hooks/useTitle';
 import assets from '../../../assets/icon/Assets-Assets-Cell-eye.svg';
+import StatusBadge from '../../../components/StatusBadge';
 
 const OrdersTable = () => {
     useTitle('Order');
@@ -10,49 +11,49 @@ const OrdersTable = () => {
             time: 'Mar 20, 2019 23:14',
             items: 2,
             total: 396.84,
-            status: 'completed'
+            status: 'Completed'
         },
         {
             id: 106,
             time: 'Dec 7, 2019 23:26',
             items: 2,
             total: 396.84,
-            status: 'completed'
+            status: 'Completed'
         },
         {
             id: 105,
             time: 'Dec 30, 2019 05:18',
             items: 2,
             total: 396.84,
-            status: 'processing'
+            status: 'Processing'
         },
         {
             id: 104,
             time: 'Feb 2, 2019 19:28',
             items: 2,
             total: 396.84,
-            status: 'processing'
+            status: 'Processing'
         },
         {
             id: 103,
             time: 'Dec 30, 2019 05:18',
             items: 2,
             total: 396.84,
-            status: 'processing'
+            status: 'Processing'
         },
         {
             id: 102,
             time: 'Today at 6:55am',
             items: 2,
             total: 396.84,
-            status: 'paid'
+            status: 'Paid'
         },
         {
             id: 101,
             time: 'Today at 6:55am',
             items: 2,
             total: 396.84,
-            status: 'paid'
+            status: 'Paid'
         },
     ];
 
@@ -80,16 +81,8 @@ const OrdersTable = () => {
                         <td className='py-6 px-4'>{data.time}</td>
                         <td className='py-6 px-4'>{data.items}</td>
                         <td className='py-6 px-4'>$ {data.total}</td>
-                        <td
-                            className='py-6 px-4'
-                        >
-                            <span
-                                className={`p-2 rounded-full flex gap-2 items-center
-                                ${data.status === 'completed' && 'bg-[#86EFAC]' || data.status === 'processing' && 'bg-[#F7DA7C]' || data.status === 'paid' && 'bg-[#E1E3E5]'}
-                                `}
-                            >
-                               <span className='w-2 h-2 rounded-full bg-slate-400' />{data.status}
-                            </span>
+                        <td className='py-6 px-4'>
+                            <StatusBadge badgeTitle={data.status} />
                         </td>
                         <td className='py-6 px-4 '>
                             <img src={assets} alt="icon" />

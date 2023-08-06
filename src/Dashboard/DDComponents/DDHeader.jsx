@@ -4,7 +4,6 @@ import { Logo } from '../../components/Logo';
 import { SearchField } from '../../components/SearchField';
 import search from '../../assets/icon/cd-search-01.svg';
 import notification from '../../assets/icon/cd-notification-01.svg';
-import avatar from '../../assets/icon/avatar.svg';
 import Dropdown from '../../components/Dropdown/Dropdown';
 import ProductsDropdown from '../../components/Dropdown/ProductsDropdown';
 import UserIcon from '../../components/UserIcon';

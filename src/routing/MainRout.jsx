@@ -33,6 +33,8 @@ import AddNewCustomer from "../Dashboard/DDPages/Customers/AddNewCustomer";
 import ItemRequestLayout from "../Dashboard/DDPages/OrderPage/ItemRequest/ItemRequestLayout";
 import AllItemRequest from "../Dashboard/DDPages/OrderPage/ItemRequest/AllItemRequest";
 import SingleItemRequest from "../Dashboard/DDPages/OrderPage/ItemRequest/SingleItemRequest";
+import AllOrders from "../Dashboard/DDPages/OrderPage/AllOrders/AllOrders";
+import SingleOrder from "../Dashboard/DDPages/OrderPage/AllOrders/SingleOrder";
 
 export const router = createBrowserRouter([
     {
@@ -149,11 +151,11 @@ export const router = createBrowserRouter([
                 children: [
                     {
                         path: '',
-                        element: <ProtectedRoute></ProtectedRoute>
+                        element: <ProtectedRoute><AllOrders /></ProtectedRoute>
                     },
                     {
                         path: ':id',
-                        element: <ProtectedRoute></ProtectedRoute>
+                        element: <ProtectedRoute><SingleOrder /></ProtectedRoute>
                     }
                 ]
             },

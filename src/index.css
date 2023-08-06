@@ -2,46 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-.max-w{
+.max-w {
     @apply max-w-screen-2xl mx-auto px-4;
 }
 
-.section-div{
+.section-div {
     @apply max-w font-Jakarta my-10 lg:my-20; 
 }
 
-.btn{
+.btn {
     @apply rounded-md duration-200 active:scale-95
 }
 
-.btn-primary{
+.btn-primary {
     @apply bg-secondary font-bold text-primary rounded-full;
 }
 
-.btn-secondary{
+.btn-secondary {
     @apply bg-primary font-bold text-white rounded-full;
 }
 
-.btn-outline{
+.btn-outline {
     @apply bg-transparent border-2 border-secondary font-bold text-primary duration-200 hover:bg-secondary rounded-full;
 }
 
-.btn-accent{
+.btn-accent {
     @apply bg-accent font-bold text-primary rounded-full;
 }
 
 .btn-primary:active,
 .btn-secondary:active,
 .btn-outline:active,
-.btn-accent:active{
+.btn-accent:active {
     @apply duration-200 scale-95;
 }
 
-.input-field{
+.input-field {
     @apply border-2 rounded-full text-[14px] duration-200 focus:outline-none focus:shadow-xl;
 }
 
-.input-field-dd{
+.input-field-dd {
     @apply border-2 rounded-md text-[14px] focus:outline-none;
 }
 
@@ -54,7 +54,7 @@
     scrollbar-width: none; 
 }
 
-.input-pass-icon{
+.input-pass-icon {
     -webkit-text-security: square;
     /* -webkit-text-security: circle; */
 }
@@ -62,6 +62,7 @@
 input[type="tel"] {
     border: 0;
 }
+
 input[type="tel"]:focus {
     border: 0;
     outline: none;
@@ -76,6 +77,6 @@ input[type="tel"]:focus {
     }
 }
 
-.dd-section-div{
+.dd-section-div {
     @apply w-full pt-24 pb-8 pl-[17%] pr-8;
 }
