@@ -1,0 +1,512 @@
+[
+    {
+        "id": "001",
+        "productName": "Wireless Earbuds",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 150,
+        "price": 79.99,
+        "category": "Electronics",
+        "publishedDate": "2023-08-01",
+        "productLink": "https://example.com/products/1",
+        "comparePrice": 99.99,
+        "tags": [
+            "electronics",
+            "audio",
+            "wireless"
+        ],
+        "description": "Experience true freedom with our Wireless Earbuds."
+    },
+    {
+        "id": "002",
+        "productName": "Fitness Tracker",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 100,
+        "price": 49.99,
+        "category": "Fitness",
+        "publishedDate": "2023-08-02",
+        "productLink": "https://example.com/products/2",
+        "comparePrice": 69.99,
+        "tags": [
+            "fitness",
+            "health",
+            "wearable"
+        ],
+        "description": "Achieve your health goals with our advanced Fitness Tracker."
+    },
+    {
+        "id": "003",
+        "productName": "Gourmet Coffee Blend",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 200,
+        "price": 14.99,
+        "category": "Food & Beverage",
+        "publishedDate": "2023-08-03",
+        "productLink": "https://example.com/products/3",
+        "comparePrice": 19.99,
+        "tags": [
+            "food",
+            "beverage",
+            "coffee"
+        ],
+        "description": "Indulge in the rich flavor of our Gourmet Coffee Blend."
+    },
+    {
+        "id": "004",
+        "productName": "Wireless Earbuds",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 150,
+        "price": 79.99,
+        "category": "Electronics",
+        "publishedDate": "2023-08-01",
+        "productLink": "https://example.com/products/1",
+        "comparePrice": 99.99,
+        "tags": [
+            "electronics",
+            "audio",
+            "wireless"
+        ],
+        "description": "Experience true freedom with our Wireless Earbuds."
+    },
+    {
+        "id": "005",
+        "productName": "Fitness Tracker",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 100,
+        "price": 49.99,
+        "category": "Fitness",
+        "publishedDate": "2023-08-02",
+        "productLink": "https://example.com/products/2",
+        "comparePrice": 69.99,
+        "tags": [
+            "fitness",
+            "health",
+            "wearable"
+        ],
+        "description": "Achieve your health goals with our advanced Fitness Tracker."
+    },
+    {
+        "id": "006",
+        "productName": "Gourmet Coffee Blend",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 200,
+        "price": 14.99,
+        "category": "Food & Beverage",
+        "publishedDate": "2023-08-03",
+        "productLink": "https://example.com/products/3",
+        "comparePrice": 19.99,
+        "tags": [
+            "food",
+            "beverage",
+            "coffee"
+        ],
+        "description": "Indulge in the rich flavor of our Gourmet Coffee Blend."
+    },
+    {
+        "id": "007",
+        "productName": "Wireless Earbuds",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 150,
+        "price": 79.99,
+        "category": "Electronics",
+        "publishedDate": "2023-08-01",
+        "productLink": "https://example.com/products/1",
+        "comparePrice": 99.99,
+        "tags": [
+            "electronics",
+            "audio",
+            "wireless"
+        ],
+        "description": "Experience true freedom with our Wireless Earbuds."
+    },
+    {
+        "id": "008",
+        "productName": "Fitness Tracker",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 100,
+        "price": 49.99,
+        "category": "Fitness",
+        "publishedDate": "2023-08-02",
+        "productLink": "https://example.com/products/2",
+        "comparePrice": 69.99,
+        "tags": [
+            "fitness",
+            "health",
+            "wearable"
+        ],
+        "description": "Achieve your health goals with our advanced Fitness Tracker."
+    },
+    {
+        "id": "009",
+        "productName": "Gourmet Coffee Blend",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 200,
+        "price": 14.99,
+        "category": "Food & Beverage",
+        "publishedDate": "2023-08-03",
+        "productLink": "https://example.com/products/3",
+        "comparePrice": 19.99,
+        "tags": [
+            "food",
+            "beverage",
+            "coffee"
+        ],
+        "description": "Indulge in the rich flavor of our Gourmet Coffee Blend."
+    },
+    {
+        "id": "010",
+        "productName": "Wireless Earbuds",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 150,
+        "price": 79.99,
+        "category": "Electronics",
+        "publishedDate": "2023-08-01",
+        "productLink": "https://example.com/products/1",
+        "comparePrice": 99.99,
+        "tags": [
+            "electronics",
+            "audio",
+            "wireless"
+        ],
+        "description": "Experience true freedom with our Wireless Earbuds."
+    },
+    {
+        "id": "011",
+        "productName": "Fitness Tracker",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 100,
+        "price": 49.99,
+        "category": "Fitness",
+        "publishedDate": "2023-08-02",
+        "productLink": "https://example.com/products/2",
+        "comparePrice": 69.99,
+        "tags": [
+            "fitness",
+            "health",
+            "wearable"
+        ],
+        "description": "Achieve your health goals with our advanced Fitness Tracker."
+    },
+    {
+        "id": "012",
+        "productName": "Gourmet Coffee Blend",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 200,
+        "price": 14.99,
+        "category": "Food & Beverage",
+        "publishedDate": "2023-08-03",
+        "productLink": "https://example.com/products/3",
+        "comparePrice": 19.99,
+        "tags": [
+            "food",
+            "beverage",
+            "coffee"
+        ],
+        "description": "Indulge in the rich flavor of our Gourmet Coffee Blend."
+    },
+    {
+        "id": "013",
+        "productName": "Wireless Earbuds",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 150,
+        "price": 79.99,
+        "category": "Electronics",
+        "publishedDate": "2023-08-01",
+        "productLink": "https://example.com/products/1",
+        "comparePrice": 99.99,
+        "tags": [
+            "electronics",
+            "audio",
+            "wireless"
+        ],
+        "description": "Experience true freedom with our Wireless Earbuds."
+    },
+    {
+        "id": "014",
+        "productName": "Fitness Tracker",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 100,
+        "price": 49.99,
+        "category": "Fitness",
+        "publishedDate": "2023-08-02",
+        "productLink": "https://example.com/products/2",
+        "comparePrice": 69.99,
+        "tags": [
+            "fitness",
+            "health",
+            "wearable"
+        ],
+        "description": "Achieve your health goals with our advanced Fitness Tracker."
+    },
+    {
+        "id": "015",
+        "productName": "Gourmet Coffee Blend",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 200,
+        "price": 14.99,
+        "category": "Food & Beverage",
+        "publishedDate": "2023-08-03",
+        "productLink": "https://example.com/products/3",
+        "comparePrice": 19.99,
+        "tags": [
+            "food",
+            "beverage",
+            "coffee"
+        ],
+        "description": "Indulge in the rich flavor of our Gourmet Coffee Blend."
+    },
+    {
+        "id": "016",
+        "productName": "Wireless Earbuds",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 150,
+        "price": 79.99,
+        "category": "Electronics",
+        "publishedDate": "2023-08-01",
+        "productLink": "https://example.com/products/1",
+        "comparePrice": 99.99,
+        "tags": [
+            "electronics",
+            "audio",
+            "wireless"
+        ],
+        "description": "Experience true freedom with our Wireless Earbuds."
+    },
+    {
+        "id": "017",
+        "productName": "Fitness Tracker",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 100,
+        "price": 49.99,
+        "category": "Fitness",
+        "publishedDate": "2023-08-02",
+        "productLink": "https://example.com/products/2",
+        "comparePrice": 69.99,
+        "tags": [
+            "fitness",
+            "health",
+            "wearable"
+        ],
+        "description": "Achieve your health goals with our advanced Fitness Tracker."
+    },
+    {
+        "id": "018",
+        "productName": "Gourmet Coffee Blend",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 200,
+        "price": 14.99,
+        "category": "Food & Beverage",
+        "publishedDate": "2023-08-03",
+        "productLink": "https://example.com/products/3",
+        "comparePrice": 19.99,
+        "tags": [
+            "food",
+            "beverage",
+            "coffee"
+        ],
+        "description": "Indulge in the rich flavor of our Gourmet Coffee Blend."
+    },
+    {
+        "id": "019",
+        "productName": "Wireless Earbuds",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 150,
+        "price": 79.99,
+        "category": "Electronics",
+        "publishedDate": "2023-08-01",
+        "productLink": "https://example.com/products/1",
+        "comparePrice": 99.99,
+        "tags": [
+            "electronics",
+            "audio",
+            "wireless"
+        ],
+        "description": "Experience true freedom with our Wireless Earbuds."
+    },
+    {
+        "id": "020",
+        "productName": "Fitness Tracker",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 100,
+        "price": 49.99,
+        "category": "Fitness",
+        "publishedDate": "2023-08-02",
+        "productLink": "https://example.com/products/2",
+        "comparePrice": 69.99,
+        "tags": [
+            "fitness",
+            "health",
+            "wearable"
+        ],
+        "description": "Achieve your health goals with our advanced Fitness Tracker."
+    },
+    {
+        "id": "021",
+        "productName": "Gourmet Coffee Blend",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 200,
+        "price": 14.99,
+        "category": "Food & Beverage",
+        "publishedDate": "2023-08-03",
+        "productLink": "https://example.com/products/3",
+        "comparePrice": 19.99,
+        "tags": [
+            "food",
+            "beverage",
+            "coffee"
+        ],
+        "description": "Indulge in the rich flavor of our Gourmet Coffee Blend."
+    },
+    {
+        "id": "022",
+        "productName": "Wireless Earbuds",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 150,
+        "price": 79.99,
+        "category": "Electronics",
+        "publishedDate": "2023-08-01",
+        "productLink": "https://example.com/products/1",
+        "comparePrice": 99.99,
+        "tags": [
+            "electronics",
+            "audio",
+            "wireless"
+        ],
+        "description": "Experience true freedom with our Wireless Earbuds."
+    },
+    {
+        "id": "023",
+        "productName": "Fitness Tracker",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 100,
+        "price": 49.99,
+        "category": "Fitness",
+        "publishedDate": "2023-08-02",
+        "productLink": "https://example.com/products/2",
+        "comparePrice": 69.99,
+        "tags": [
+            "fitness",
+            "health",
+            "wearable"
+        ],
+        "description": "Achieve your health goals with our advanced Fitness Tracker."
+    },
+    {
+        "id": "024",
+        "productName": "Gourmet Coffee Blend",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 200,
+        "price": 14.99,
+        "category": "Food & Beverage",
+        "publishedDate": "2023-08-03",
+        "productLink": "https://example.com/products/3",
+        "comparePrice": 19.99,
+        "tags": [
+            "food",
+            "beverage",
+            "coffee"
+        ],
+        "description": "Indulge in the rich flavor of our Gourmet Coffee Blend."
+    },
+    {
+        "id": "025",
+        "productName": "Wireless Earbuds",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 150,
+        "price": 79.99,
+        "category": "Electronics",
+        "publishedDate": "2023-08-01",
+        "productLink": "https://example.com/products/1",
+        "comparePrice": 99.99,
+        "tags": [
+            "electronics",
+            "audio",
+            "wireless"
+        ],
+        "description": "Experience true freedom with our Wireless Earbuds."
+    },
+    {
+        "id": "026",
+        "productName": "Fitness Tracker",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 100,
+        "price": 49.99,
+        "category": "Fitness",
+        "publishedDate": "2023-08-02",
+        "productLink": "https://example.com/products/2",
+        "comparePrice": 69.99,
+        "tags": [
+            "fitness",
+            "health",
+            "wearable"
+        ],
+        "description": "Achieve your health goals with our advanced Fitness Tracker."
+    },
+    {
+        "id": "027",
+        "productName": "Gourmet Coffee Blend",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 200,
+        "price": 14.99,
+        "category": "Food & Beverage",
+        "publishedDate": "2023-08-03",
+        "productLink": "https://example.com/products/3",
+        "comparePrice": 19.99,
+        "tags": [
+            "food",
+            "beverage",
+            "coffee"
+        ],
+        "description": "Indulge in the rich flavor of our Gourmet Coffee Blend."
+    },
+    {
+        "id": "028",
+        "productName": "Wireless Earbuds",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 150,
+        "price": 79.99,
+        "category": "Electronics",
+        "publishedDate": "2023-08-01",
+        "productLink": "https://example.com/products/1",
+        "comparePrice": 99.99,
+        "tags": [
+            "electronics",
+            "audio",
+            "wireless"
+        ],
+        "description": "Experience true freedom with our Wireless Earbuds."
+    },
+    {
+        "id": "029",
+        "productName": "Fitness Tracker",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 100,
+        "price": 49.99,
+        "category": "Fitness",
+        "publishedDate": "2023-08-02",
+        "productLink": "https://example.com/products/2",
+        "comparePrice": 69.99,
+        "tags": [
+            "fitness",
+            "health",
+            "wearable"
+        ],
+        "description": "Achieve your health goals with our advanced Fitness Tracker."
+    },
+    {
+        "id": "030",
+        "productName": "Gourmet Coffee Blend",
+        "productImg": "https://www.altosindia.net/public/product/v1-hair-care/onion-hair-conditioner.jpg",
+        "productQuantity": 200,
+        "price": 14.99,
+        "category": "Food & Beverage",
+        "publishedDate": "2023-08-03",
+        "productLink": "https://example.com/products/3",
+        "comparePrice": 19.99,
+        "tags": [
+            "food",
+            "beverage",
+            "coffee"
+        ],
+        "description": "Indulge in the rich flavor of our Gourmet Coffee Blend."
+    }
+]

@@ -11,6 +11,7 @@ import filter_minor from '../../../assets/icon/filter_minor.svg';
 import sort_minor from '../../../assets/icon/sort_minor.svg';
 import cancel from '../../../assets/icon/cd-cancel-01.svg';
 import CopyButton from '../../../components/CopyButton';
+import StatusBadge from '../../../components/StatusBadge';
 
 const SingleCustomer = () => {
     const { customersData } = useContext(AllUserContext);
@@ -120,7 +121,7 @@ const SingleCustomer = () => {
                                         {data.productName}
                                     </td>
                                     <td className='py-4 px-6 p-2'>
-                                        {data.status}
+                                        <StatusBadge badgeTitle={data.status} />
                                     </td>
                                     <td className='py-4 px-6'>$ {data.price}</td>
                                 </tr>)

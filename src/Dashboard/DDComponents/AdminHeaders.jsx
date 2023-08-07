@@ -66,6 +66,19 @@ const AdminHeaders = ({ location = String }) => {
     </>
   }
 
+  else if (location === 'all-products') {
+    return <>
+      <div className='pb-4 border-b flex items-center justify-between'>
+        <h2 className='text-2xl font-semibold'>Products</h2>
+        <Link
+          className='btn bg-secondary px-4 py-2'
+        >
+          Add New Product
+        </Link>
+      </div>
+    </>
+  }
+
   else if (location === 'staff') {
     return <>
       <div className='pb-6 border-b flex items-center justify-between'>

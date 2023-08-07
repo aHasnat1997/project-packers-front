@@ -7,7 +7,7 @@ const AllOrdersProductProvider = ({ children }) => {
   const [ordersProductData, setOrdersProductData] = useState([]);
   useEffect(() => {
     const options = { method: 'GET' };
-    fetch('/requestProductInfo.json', options)
+    fetch('/customersInfo.json', options)
       .then(response => response.json())
       .then(response => {
         setOrdersProductData(response)

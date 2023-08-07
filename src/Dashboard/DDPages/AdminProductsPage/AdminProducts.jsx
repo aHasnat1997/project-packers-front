@@ -1,9 +1,10 @@
 import React from 'react';
+import AdminHeaders from '../../DDComponents/AdminHeaders';
 
 const AdminProducts = () => {
     return (
         <section className='dd-section-div'>
-            Products
+            <AdminHeaders location='all-products' />
         </section>
     );
 };

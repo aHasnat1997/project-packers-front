@@ -143,7 +143,6 @@ const SingleItemRequest = () => {
               <p className='text-gray-400 mt-4'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             </div>
           </div>
-
           <div className='mt-4 w-full border rounded-lg'>
             <h5 className='font-semibold p-5 text-xl'>Payment</h5>
             <div className='px-5 pb-5 flex flex-col gap-4'>
@@ -185,7 +184,6 @@ const SingleItemRequest = () => {
             </div>
           </div>
         </div>
-
         <div className='w-1/4 border rounded-lg'>
           <div className='p-5 flex flex-col gap-5 border-b'>
             <div className='flex items-center justify-between'>

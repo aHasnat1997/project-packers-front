@@ -7,6 +7,8 @@ import assets from '../../../../assets/icon/Assets-caret-down_minor.svg';
 import { SearchField } from '../../../../components/SearchField';
 import search from '../../../../assets/icon/cd-search-01.svg';
 import filter from '../../../../assets/icon/cd-filter.svg';
+import cd_delete from '../../../../assets/icon/cd-delete-01.svg';
+import cd_edit from '../../../../assets/icon/cd-edit-01.svg';
 import cd_arrow from '../../../../assets/icon/cd-arrow-data-transfer-vertical-round 1-01.svg';
 import select from '../../../../assets/icon/cd-select_minor-01.svg';
 import { Link } from 'react-router-dom';
@@ -60,25 +62,49 @@ const AllOrders = () => {
               ID <img src={select} alt="select" />
             </td>
             <td className='py-4 px-6'>Product name</td>
-            <td className='py-4 px-6'>Link</td>
             <td className='py-4 px-6'>Date</td>
             <td className='py-4 px-6'>Customer</td>
             <td className='py-4 px-6'>Status</td>
+            <td className='py-4 px-6'>Items</td>
+            <td className='py-4 px-6'>Total</td>
+            <td className='py-4 px-6'>Action</td>
           </tr>
         </thead>
         <tbody>
           {
-            ordersProductData?.map(data => <tr key={data?.id} className='hover:bg-[#FEF9DC]'>
-              <td className='py-4 px-6 border-b'><input type="checkbox" /></td>
-              <td className='py-4 px-6 border-b'># {data?.id}</td>
-              <td className='py-4 px-6 border-b'>
-                <Link to={`${data?.id}`}>{data?.productName}</Link>
+            ordersProductData?.map(data => <tr
+              key={data?.id}
+              className='hover:bg-[#FEF9DC] border-b'
+            >
+              <td className='py-4 px-6'><input type="checkbox" /></td>
+              <td className='py-4 px-6'># {data?.id}</td>
+              <td className='py-4 px-6'>
+                <Link to={`${data?.id}`}>{data?.orders[0]?.productName}</Link>
               </td>
-              <td className='py-4 px-6 border-b text-[#3E949A]'>{data?.webSiteLink}</td>
-              <td className='py-4 px-6 border-b'>{data?.date}</td>
-              <td className='py-4 px-6 border-b'>{data?.customer?.name}</td>
-              <td className='py-4 px-6 border-b'>
-                <StatusBadge badgeTitle={data?.status} />
+              <td className='py-4 px-6'>{data?.orders[0]?.date}</td>
+              <td className='py-4 px-6'>{data?.name}</td>
+              <td className='py-4 px-6'>
+                <StatusBadge badgeTitle={data?.orders[0]?.status} />
+              </td>
+              <td className='py-4 px-6'>{data?.orders.length} Items</td>
+              <td className='py-4 px-6'>
+                $ {
+                  data.orders.reduce((total, item) => (parseFloat(total + item.price)), 0)
+                }
+              </td>
+              <td className='py-4 px-6'>
+                <div className='flex items-center justify-center gap-2'>
+                  <img
+                    src={cd_delete}
+                    alt="delete"
+                    className='btn cursor-pointer'
+                  />
+                  <img
+                    src={cd_edit}
+                    alt="edit"
+                    className='btn cursor-pointer'
+                  />
+                </div>
               </td>
             </tr>)
           }

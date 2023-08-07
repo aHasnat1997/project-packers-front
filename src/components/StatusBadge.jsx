@@ -14,6 +14,16 @@ const StatusBadge = ({ badgeTitle = String }) => {
       bgColor: 'bg-[#E4E5E7]'
     },
     {
+      title: 'Pending Payment',
+      dotColor: 'bg-[#475569]',
+      bgColor: 'bg-[#E4E5E7]'
+    },
+    {
+      title: 'Refunded',
+      dotColor: 'bg-[#475569]',
+      bgColor: 'bg-[#94A3B8]'
+    },
+    {
       title: 'Abandoned',
       dotColor: 'bg-[#475569]',
       bgColor: 'bg-[#E4E5E7]'
@@ -35,6 +45,11 @@ const StatusBadge = ({ badgeTitle = String }) => {
     },
     {
       title: 'Closed',
+      dotColor: 'bg-[#B91C1C]',
+      bgColor: 'bg-[#FECACA]'
+    },
+    {
+      title: 'Cancel',
       dotColor: 'bg-[#B91C1C]',
       bgColor: 'bg-[#FECACA]'
     },
