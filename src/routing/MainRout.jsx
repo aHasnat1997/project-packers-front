@@ -23,7 +23,7 @@ import AccountDetails from "../pages/MyAccount/OutletComponents/AccountDetails";
 import DashboardMainLayout from "../Dashboard/DashboardMainLayout";
 import DashboardLayout from "../Dashboard/DDPages/DashboardPage/DashboardLayout";
 import OrderLayout from "../Dashboard/DDPages/OrderPage/AllOrders/OrderLayout";
-import AdminProducts from "../Dashboard/DDPages/AdminProductsPage/AdminProducts";
+import AdminProductsLayout from "../Dashboard/DDPages/AdminProductsPage/AdminProductsLayout";
 import Customers from "../Dashboard/DDPages/Customers/Customers";
 import Support from "../Dashboard/DDPages/Support/Support";
 import Staff from "../Dashboard/DDPages/AdminStaff/Staff";
@@ -35,6 +35,14 @@ import AllItemRequest from "../Dashboard/DDPages/OrderPage/ItemRequest/AllItemRe
 import SingleItemRequest from "../Dashboard/DDPages/OrderPage/ItemRequest/SingleItemRequest";
 import AllOrders from "../Dashboard/DDPages/OrderPage/AllOrders/AllOrders";
 import SingleOrder from "../Dashboard/DDPages/OrderPage/AllOrders/SingleOrder";
+import AllProducts from "../Dashboard/DDPages/AdminProductsPage/AllProducts";
+import AddProduct from "../Dashboard/DDPages/AdminProductsPage/AddProduct";
+import DiscountLayout from "../Dashboard/DDPages/DiscountPage/DiscountLayout";
+import AllDiscountList from "../Dashboard/DDPages/DiscountPage/AllDiscountList";
+import AddDiscount from "../Dashboard/DDPages/DiscountPage/AddDiscount";
+import CategoryLayout from "../Dashboard/DDPages/CategoryPage/CategoryLayout";
+import AllCategory from "../Dashboard/DDPages/CategoryPage/AllCategory";
+
 
 export const router = createBrowserRouter([
     {
@@ -161,7 +169,45 @@ export const router = createBrowserRouter([
             },
             {
                 path: 'products',
-                element: <ProtectedRoute><AdminProducts /></ProtectedRoute>
+                element: <ProtectedRoute><AdminProductsLayout /></ProtectedRoute>,
+                children: [
+                    {
+                        path: '',
+                        element: <ProtectedRoute><AllProducts /></ProtectedRoute>
+                    },
+                    {
+                        path: 'add-product',
+                        element: <ProtectedRoute><AddProduct /></ProtectedRoute>
+                    },
+                    {
+                        path: ':id',
+                        element: <ProtectedRoute><AddProduct /></ProtectedRoute>
+                    }
+                ]
+            },
+            {
+                path: 'discount',
+                element: <ProtectedRoute><DiscountLayout /></ProtectedRoute>,
+                children: [
+                    {
+                        path: '',
+                        element: <ProtectedRoute><AllDiscountList /></ProtectedRoute>
+                    },
+                    {
+                        path: 'add-coupon',
+                        element: <ProtectedRoute><AddDiscount /></ProtectedRoute>
+                    }
+                ]
+            },
+            {
+                path: 'category',
+                element: <ProtectedRoute><CategoryLayout /></ProtectedRoute>,
+                children: [
+                    {
+                        path: '',
+                        element: <ProtectedRoute><AllCategory /></ProtectedRoute>
+                    }
+                ]
             },
             {
                 path: 'customers',

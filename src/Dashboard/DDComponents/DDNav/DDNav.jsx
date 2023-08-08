@@ -51,19 +51,19 @@ const DDNav = () => {
                     id: 1,
                     title: 'All Products',
                     to: '/admin/products',
-                    end: true,
+                    end: false,
                 },
                 {
                     id: 2,
                     title: 'Discount',
-                    to: '/admin',
-                    end: true,
+                    to: '/admin/discount',
+                    end: false,
                 },
                 {
                     id: 3,
                     title: 'Category',
-                    to: '/admin',
-                    end: true,
+                    to: '/admin/category',
+                    end: false,
                 }
             ]
         },

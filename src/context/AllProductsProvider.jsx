@@ -6,7 +6,7 @@ const AllProductsProvider = ({ children }) => {
   const [productData, setProductsData] = useState([]);
   useEffect(() => {
     const options = { method: 'GET' };
-    fetch('/productList.json', options)
+    fetch('/productsList.json', options)
       .then(response => response.json())
       .then(response => {
         setProductsData(response)
