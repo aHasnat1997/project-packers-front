@@ -94,8 +94,8 @@ const DDNav = () => {
     ]
 
     return (
-        <nav className='w-[15%] bg-[#efefef] fixed top-0 left-0 bottom-0 pt-24 border-r'>
-            <div className='w-full pr-3'>
+        <nav className='w-[15%] h-[calc(100vh-76px)] bg-[#efefef] pt-4 border-r'>
+            <div className='w-full pr-2'>
                 <ul>
                     {
                         navList.map(list => (

@@ -78,11 +78,19 @@ input[type="tel"]:focus {
 }
 
 .dd-section-div {
-    @apply w-full pt-24 pb-8 pl-[17%] pr-8;
+    @apply w-full py-8 px-8 h-screen overflow-y-auto no-scrollbar;
 }
 
 .prevent-select {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
-  }
+}
+
+.heatmap-container .apexcharts-heatmap-series rect {
+  /* rx: 0; 
+  ry: 0;  */
+  margin: 0;
+  transition: fill 0.3s ease;
+  fill-opacity: 1;
+}

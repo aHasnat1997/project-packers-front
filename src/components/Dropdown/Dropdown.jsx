@@ -21,11 +21,11 @@ const Dropdown = ({
 
     return (
         <div
-            className={`relative z-10 flex-1 w-full`}
+            className={`relative z-10`}
         >
             <button
                 onClick={() => setOpen(!isOpen)}
-                className={`w-full ${btnStyle}`}
+                className={`${btnStyle}`}
             >
                 {ddTitle}
             </button>

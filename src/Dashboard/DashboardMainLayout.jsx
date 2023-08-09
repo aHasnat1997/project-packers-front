@@ -9,7 +9,7 @@ const DashboardMainLayout = () => {
     useTitle('Admin Dashboard');
 
     return (
-        <main>
+        <main className='h-screen overflow-hidden no-scrollbar'>
             <StayTop />
             <DDHeader />
             <div className='flex'>

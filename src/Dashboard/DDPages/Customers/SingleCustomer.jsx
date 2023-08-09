@@ -21,6 +21,8 @@ const SingleCustomer = () => {
         return parseFloat((total + price.price).toFixed(2));
     }, 0);
 
+    console.log(customersData.length);
+
     return (
         <>
             <div className='pb-4 border-b flex items-center justify-between'>
@@ -47,21 +49,27 @@ const SingleCustomer = () => {
                     >
                         Create Order
                     </button>
-                    <div>
-                        <button className='btn border'>
+                    <div className='flex'>
+                        <Link
+                            to={parseInt(id) > 1 && `/admin/customers/${parseInt(id) - 1}`}
+                            className='btn border'
+                        >
                             <img
                                 src={arrow_left}
                                 alt="arrow_left"
                                 className='p-2 w-10'
                             />
-                        </button>
-                        <button className='btn border'>
+                        </Link>
+                        <Link
+                            to={parseInt(id) < customersData.length && `/admin/customers/${parseInt(id) + 1}`}
+                            className='btn border'
+                        >
                             <img
                                 src={arrow_right}
                                 alt="arrow_right"
                                 className='p-2 w-10'
                             />
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

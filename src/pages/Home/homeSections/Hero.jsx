@@ -13,9 +13,9 @@ const Hero = () => {
                 <div className='mt-8 lg:flex items-center relative z-10'>
                     <SearchField
                         placeholder={'Paste the URL of the product'}
-                        fieldStyle='input-field w-full lg:w-[26rem] py-[1rem]'
+                        fieldStyle='input-field w-full py-[1rem]'
                         icon={search}
-                        
+                        flexOne={true}
                     />
                     <Modal
                         btnName='Create Request'

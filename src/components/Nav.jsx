@@ -29,6 +29,7 @@ const Nav = ({ isOpen, setOpen }) => {
                         placeholder='Paste the URL of the product'
                         fieldStyle='input-field w-[40rem] py-[.7rem]'
                         icon={searchYellow}
+                        flexOne={true}
                     />
                     <button className="text-primary text-base">Support</button>
                 </div>
@@ -108,6 +109,7 @@ const Nav = ({ isOpen, setOpen }) => {
                     placeholder={'Paste the URL of the product'}
                     icon={searchYellow}
                     fieldStyle='input-field w-full py-3'
+                    flexOne={true}
                 />
                 {
                     user ?
@@ -121,7 +123,7 @@ const Nav = ({ isOpen, setOpen }) => {
                             }
                             ddIcon={false}
                             open={false}
-                            btnStyle={`rounded-full w-[30px] p-[6px] ml-auto duration-300 active:scale-90`}
+                            btnStyle={`rounded-full p-[6px] ml-auto duration-300 active:scale-90`}
                             ddPosition='absolute top-16 right-[18rem]'
                             ddBody={<ProductsDropdown />}
                         />
