@@ -94,7 +94,7 @@ const DDNav = () => {
     ]
 
     return (
-        <nav className='w-[15%] h-[calc(100vh-76px)] bg-[#efefef] pt-4 border-r'>
+        <nav className='w-full h-full overflow-hidden bg-[#efefef] pt-4 border-r'>
             <div className='w-full pr-2'>
                 <ul>
                     {

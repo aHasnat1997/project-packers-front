@@ -1,67 +1,15 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import caret_down from '../../../assets/icon/caret-down.svg';
+import { Link, NavLink } from 'react-router-dom';
+import { ChatContext } from '../../../context/ChatProvider';
 
 
 const SupportLeft = () => {
+  const { chatData } = useContext(ChatContext);
   const [active, setActive] = useState('');
-  const [chatId, setChatId] = useState('');
-
-  const chatNav = [
-    {
-      'support_type': 'Refund',
-      'message_id': 123451,
-      'message': 'I would like to request a refund for my recent purchase.'
-    },
-    {
-      'support_type': 'Account',
-      'message_id': 123452,
-      'message': 'I having trouble accessing my account. Can you please assist?'
-    },
-    {
-      'support_type': 'Payment',
-      'message_id': 123453,
-      'message': 'There seems to be an issue with my payment processing. Need help urgently.'
-    },
-    {
-      'support_type': 'Refund',
-      'message_id': 123454,
-      'message': 'I received the wrong item. Can I get a refund or a replacement?'
-    },
-    {
-      'support_type': 'Account',
-      'message_id': 123455,
-      'message': 'I need to update the email address associated with my account. How can I do that?'
-    },
-    {
-      'support_type': 'Payment',
-      'message_id': 123456,
-      'message': 'My credit card was charged twice for the same order. Please help me resolve this.'
-    },
-    {
-      'support_type': 'Refund',
-      'message_id': 123457,
-      'message': 'The product I received is damaged. I like to return it and get a refund.'
-    },
-    {
-      'support_type': 'Account',
-      'message_id': 123458,
-      'message': 'I forgot my account password. How can I reset it?'
-    },
-    {
-      'support_type': 'Payment',
-      'message_id': 123459,
-      'message': 'I made a payment, but the order status still shows as unpaid. What should I do?'
-    },
-    {
-      'support_type': 'Refund',
-      'message_id': 123460,
-      'message': 'I accidentally placed this order. Can I cancel it and get a refund?'
-    }
-  ];
-
 
   return (
-    <div className='py-5 px-8'>
+    <div className='h-[calc(100vh-150px)] py-5 px-8'>
       <div className='flex items-center divide-x border rounded-lg'>
         <button
           onClick={() => setActive('Open')}
@@ -82,17 +30,28 @@ const SupportLeft = () => {
           Support type <img src={caret_down} alt='caret_down' />
         </button>
       </div>
-      <div>
+      <div className='h-full mt-5 overflow-y-scroll no-scrollbar space-y-5'>
         {
-          chatNav.map(chat => <div
-            key={chat.message_id}
-            className='w-64 p-3'
+          chatData?.map(chat => <div
+            key={chat?.message_id}
+            className='border-b flex items-center'
           >
-            <h5 className='flex items-center gap-4 text-gray-400'>
-              <span className='w-2 h-2 rounded-full bg-[#16A34A]' /> {chat.support_type}
-            </h5>
-            <h3>Order ID#{chat.message_id}</h3>
-            <p className='text-gray-400'>{chat.message}</p>
+            <NavLink
+              to={`${chat?.message_id}`}
+              end={chat?.message_id && true}
+              className={({ isActive }) => isActive ? 'bg-secondary w-1 h-32 rounded-full' : 'w-1 h-32 rounded-full'}
+            />
+            <Link
+              to={`${chat?.message_id}`}
+            >
+              <div className='w-64 p-3'>
+                <h5 className='flex items-center gap-4 text-gray-400'>
+                  <span className='w-2 h-2 rounded-full bg-[#16A34A]' /> {chat?.support_type}
+                </h5>
+                <h3>Order ID#{chat?.message_id}</h3>
+                <p className='text-gray-400'>{chat?.last_message}</p>
+              </div>
+            </Link>
           </div>)
         }
       </div>

@@ -1,9 +1,65 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ChatContext } from '../../../context/ChatProvider';
+import { useParams } from 'react-router-dom';
+import caret_down from '../../../assets/icon/caret-down.svg';
+import send from '../../../assets/send.png';
 
 const SupportRight = () => {
+  const { chatData } = useContext(ChatContext);
+  const { id } = useParams();
+  const singleChat = chatData?.find(data => data?.message_id === parseInt(id));
+  // console.log(supportChat);
+
   return (
-    <div className='py-5 px-8'>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ut corporis tempore sequi corrupti laudantium natus. Doloremque nemo incidunt voluptatum molestiae nobis tenetur illum vero beatae mollitia. Tempora unde error consequatur iusto nemo distinctio sed aliquam tempore laborum sunt, eveniet ullam doloribus mollitia veniam, magni delectus qui sint. Expedita magni officia eius quae aspernatur minima explicabo! Placeat aliquam, recusandae libero ut eaque facilis dolor ratione rerum deleniti doloribus nobis, non delectus quam! Quia rem natus deleniti reprehenderit ad perspiciatis quam corporis. Amet nihil rem consectetur aliquam dignissimos eveniet atque fuga quisquam eum temporibus impedit, libero sunt quam alias delectus nesciunt ab ex quos vero quod recusandae! Ea sapiente nemo quae maiores. Blanditiis, ratione similique et provident aspernatur earum nobis doloribus in recusandae veniam atque vel adipisci! Dolore odit reiciendis cupiditate, voluptatem sunt non earum? Corrupti voluptate minima suscipit quam molestias fugit, facere accusantium maxime rerum nulla inventore libero voluptates possimus. At adipisci saepe labore possimus culpa provident cumque dolore consequuntur asperiores aspernatur architecto, impedit mollitia quos omnis deleniti. Odit ducimus pariatur similique est doloribus laboriosam, deleniti praesentium culpa? Amet est provident omnis ea aperiam magni corrupti, error labore cum autem et eum tempora consequatur doloribus sapiente pariatur iste nisi velit?
+    <div className='w-full h-[calc(100vh-9rem)] relative'>
+      <div className='w-full shadow py-5 px-8 flex items-center justify-between'>
+        <div>
+          <h5 className='flex items-center gap-4 text-gray-400'>
+            <span className='w-2 h-2 rounded-full bg-[#16A34A]' /> {singleChat?.support_type}
+          </h5>
+          <h3>Order ID#{singleChat?.message_id}</h3>
+        </div>
+        <div className='flex items-center gap-2'>
+          <p>Open</p>
+          <img src={caret_down} alt='caret_down' />
+        </div>
+      </div>
+
+      <div className='w-full h-[calc(85vh-9rem)] py-5 px-8 overflow-auto no-scrollbar text-justify'>
+
+        {
+          singleChat?.chats?.reverse().map((chat, i) => <div
+            className={`w-80 p-4 rounded-xl ${chat?.sender === 'User' && 'bg-[#092F3F] ml-auto' || chat?.sender === 'Support' && 'bg-[#CFF6EF]'}`}
+            key={i}
+          >
+            <div className='w-full flex items-center justify-between'>
+              <h6 className='text-[#3E949A]'>{chat?.sender}</h6>
+              <h6 className='text-gray-400'>{chat?.timestamp}</h6>
+            </div>
+            <p className={chat?.sender === 'User' && 'text-white mt-2' || chat?.sender === 'Support' && 'text-black mt-2'}>
+              {chat?.message}
+            </p>
+          </div>)
+        }
+
+      </div>
+
+      <form className='absolute -bottom-10 left-[calc(50%-47.5%)] w-[95%] bg-white overflow-hidden rounded-lg flex items-end'>
+        <textarea
+          className='w-full p-5 focus:outline-none no-scrollbar'
+          placeholder='Type your message'
+        />
+        {/* <input
+          type='submit'
+          value='Send'
+          className='btn-primary py-3 px-10 flex-1 text-lg mx-2'
+        /> */}
+        <img
+          src={send}
+          alt='send'
+          className='w-24 py-3 pl-10 pr-4 flex-1 text-lg cursor-pointer active:animate-send'
+        />
+      </form>
     </div>
   );
 };

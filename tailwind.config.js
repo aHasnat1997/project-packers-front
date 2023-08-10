@@ -31,7 +31,8 @@ export default {
       animation: {
         'spin-slow': 'spin 3s linear infinite',
         wiggle: 'wiggle 1s ease-in-out infinite',
-        btnBounce: 'bounce 1s ease-in-out infinite'
+        bounce: 'bounce 1s ease-in-out infinite',
+        send: 'send 2s linear infinite'
       },
 
       keyframes: {
@@ -40,12 +41,19 @@ export default {
           '50%': { transform: 'rotate(3deg)' },
         },
         bounce: {
-          '0% 100%': {
+          '0%, 100%': {
             transform: 'none',
           },
           '50%': {
             transform: 'scale(.9)'
           }
+        },
+        send: {
+          '0 % ': { transform: 'translate(0, 0)' },
+          '25%': { transform: 'translate(200px, -200px)' },
+          '50%': { transform: 'translate(0px, 200px)' },
+          '75%': { transform: 'translate(-2px, 0px)' },
+          '100%': { transform: 'translate(0px, 0px)' },
         }
       }
 

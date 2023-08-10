@@ -42,6 +42,8 @@ import AllDiscountList from "../Dashboard/DDPages/DiscountPage/AllDiscountList";
 import AddDiscount from "../Dashboard/DDPages/DiscountPage/AddDiscount";
 import CategoryLayout from "../Dashboard/DDPages/CategoryPage/CategoryLayout";
 import AllCategory from "../Dashboard/DDPages/CategoryPage/AllCategory";
+import SupportRight from "../Dashboard/DDPages/Support/SupportRight";
+import SupportHome from "../Dashboard/DDPages/Support/SupportHome";
 
 
 export const router = createBrowserRouter([
@@ -229,7 +231,17 @@ export const router = createBrowserRouter([
             },
             {
                 path: 'support',
-                element: <ProtectedRoute><Support /></ProtectedRoute>
+                element: <ProtectedRoute><Support /></ProtectedRoute>,
+                children: [
+                    {
+                        path: '',
+                        element: <ProtectedRoute><SupportHome /></ProtectedRoute>
+                    },
+                    {
+                        path: ':id',
+                        element: <ProtectedRoute><SupportRight /></ProtectedRoute>
+                    }
+                ]
             },
             {
                 path: 'staff',

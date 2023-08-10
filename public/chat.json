@@ -1,0 +1,457 @@
+[
+    {
+        "support_type": "Refund",
+        "message_id": 123451,
+        "last_message": "I would like to request a refund for my recent purchase.",
+        "chats": [
+            {
+                "sender": "User",
+                "message": "Hi, I need help with my recent order.",
+                "timestamp": "2023-08-09 10:00:00"
+            },
+            {
+                "sender": "Support",
+                "message": "Of course! Please provide me with your order number.",
+                "timestamp": "2023-08-09 10:05:00"
+            },
+            {
+                "sender": "User",
+                "message": "My order number is 12345.",
+                "timestamp": "2023-08-09 10:10:00"
+            },
+            {
+                "sender": "Support",
+                "message": "Thank you for providing the order number. What seems to be the issue?",
+                "timestamp": "2023-08-09 10:15:00"
+            },
+            {
+                "sender": "User",
+                "message": "I received a wrong item in my order.",
+                "timestamp": "2023-08-09 10:20:00"
+            },
+            {
+                "sender": "Support",
+                "message": "I apologize for the inconvenience. Can you please describe the incorrect item you received?",
+                "timestamp": "2023-08-09 10:25:00"
+            },
+            {
+                "sender": "User",
+                "message": "The item was supposed to be a blue shirt, but I received a red one instead.",
+                "timestamp": "2023-08-09 10:30:00"
+            },
+            {
+                "sender": "Support",
+                "message": "I'm sorry for the mix-up. We'll arrange for a replacement to be sent to you. Can you keep the red shirt as well?",
+                "timestamp": "2023-08-09 10:35:00"
+            },
+            {
+                "sender": "User",
+                "message": "Yes, I can keep the red shirt. Thank you!",
+                "timestamp": "2023-08-09 10:40:00"
+            },
+            {
+                "sender": "Support",
+                "message": "You're welcome! We'll process the replacement order right away. Is there anything else I can assist you with?",
+                "timestamp": "2023-08-09 10:45:00"
+            },
+            {
+                "sender": "User",
+                "message": "No, that's all. Thank you for your help!",
+                "timestamp": "2023-08-09 10:50:00"
+            }
+        ]
+    },
+    {
+        "support_type": "Account",
+        "message_id": 123452,
+        "last_message": "I having trouble accessing my account. Can you please assist?",
+        "chats": [
+            {
+                "sender": "User",
+                "message": "Hi, I'm having trouble logging into my account.",
+                "timestamp": "2023-08-09 11:00:00"
+            },
+            {
+                "sender": "Support",
+                "message": "I can help you with that. Can you provide your email address?",
+                "timestamp": "2023-08-09 11:05:00"
+            },
+            {
+                "sender": "User",
+                "message": "Sure, my email is user@example.com.",
+                "timestamp": "2023-08-09 11:10:00"
+            },
+            {
+                "sender": "Support",
+                "message": "Thank you. We've sent you a password reset link to your email.",
+                "timestamp": "2023-08-09 11:15:00"
+            }
+        ]
+    },
+    {
+        "support_type": "Payment",
+        "message_id": 123453,
+        "last_message": "There seems to be an issue with my payment processing. Need help urgently.",
+        "chats": [
+            {
+                "sender": "User",
+                "message": "Hi, I need help with my recent order.",
+                "timestamp": "2023-08-09 10:00:00"
+            },
+            {
+                "sender": "Support",
+                "message": "Of course! Please provide me with your order number.",
+                "timestamp": "2023-08-09 10:05:00"
+            },
+            {
+                "sender": "User",
+                "message": "My order number is 12345.",
+                "timestamp": "2023-08-09 10:10:00"
+            },
+            {
+                "sender": "Support",
+                "message": "Thank you for providing the order number. What seems to be the issue?",
+                "timestamp": "2023-08-09 10:15:00"
+            },
+            {
+                "sender": "User",
+                "message": "I received a wrong item in my order.",
+                "timestamp": "2023-08-09 10:20:00"
+            },
+            {
+                "sender": "Support",
+                "message": "I apologize for the inconvenience. Can you please describe the incorrect item you received?",
+                "timestamp": "2023-08-09 10:25:00"
+            },
+            {
+                "sender": "User",
+                "message": "The item was supposed to be a blue shirt, but I received a red one instead.",
+                "timestamp": "2023-08-09 10:30:00"
+            },
+            {
+                "sender": "Support",
+                "message": "I'm sorry for the mix-up. We'll arrange for a replacement to be sent to you. Can you keep the red shirt as well?",
+                "timestamp": "2023-08-09 10:35:00"
+            },
+            {
+                "sender": "User",
+                "message": "Yes, I can keep the red shirt. Thank you!",
+                "timestamp": "2023-08-09 10:40:00"
+            },
+            {
+                "sender": "Support",
+                "message": "You're welcome! We'll process the replacement order right away. Is there anything else I can assist you with?",
+                "timestamp": "2023-08-09 10:45:00"
+            },
+            {
+                "sender": "User",
+                "message": "No, that's all. Thank you for your help!",
+                "timestamp": "2023-08-09 10:50:00"
+            }
+        ]
+    },
+    {
+        "support_type": "Refund",
+        "message_id": 123454,
+        "last_message": "I received the wrong item. Can I get a refund or a replacement?",
+        "chats": [
+            {
+                "sender": "User",
+                "message": "Hello, I'd like to inquire about your product pricing.",
+                "timestamp": "2023-08-09 12:00:00"
+            },
+            {
+                "sender": "Support",
+                "message": "Of course! Please let me know which product you're interested in.",
+                "timestamp": "2023-08-09 12:05:00"
+            },
+            {
+                "sender": "User",
+                "message": "I'm looking at the premium laptop model.",
+                "timestamp": "2023-08-09 12:10:00"
+            },
+            {
+                "sender": "Support",
+                "message": "The premium laptop starts at $1500. Do you need more information about its specifications?",
+                "timestamp": "2023-08-09 12:15:00"
+            },
+            {
+                "sender": "User",
+                "message": "Yes, I'd like to know about the RAM and storage options.",
+                "timestamp": "2023-08-09 12:20:00"
+            }
+        ]
+    },
+    {
+        "support_type": "Account",
+        "message_id": 123455,
+        "last_message": "I need to update the email address associated with my account. How can I do that?",
+        "chats": [
+            {
+                "sender": "User",
+                "message": "Hi, I'm having trouble logging into my account.",
+                "timestamp": "2023-08-09 11:00:00"
+            },
+            {
+                "sender": "Support",
+                "message": "I can help you with that. Can you provide your email address?",
+                "timestamp": "2023-08-09 11:05:00"
+            },
+            {
+                "sender": "User",
+                "message": "Sure, my email is user@example.com.",
+                "timestamp": "2023-08-09 11:10:00"
+            },
+            {
+                "sender": "Support",
+                "message": "Thank you. We've sent you a password reset link to your email.",
+                "timestamp": "2023-08-09 11:15:00"
+            }
+        ]
+    },
+    {
+        "support_type": "Payment",
+        "message_id": 123456,
+        "last_message": "My credit card was charged twice for the same order. Please help me resolve this.",
+        "chats": [
+            {
+                "sender": "User",
+                "message": "Hi, I need help with my recent order.",
+                "timestamp": "2023-08-09 10:00:00"
+            },
+            {
+                "sender": "Support",
+                "message": "Of course! Please provide me with your order number.",
+                "timestamp": "2023-08-09 10:05:00"
+            },
+            {
+                "sender": "User",
+                "message": "My order number is 12345.",
+                "timestamp": "2023-08-09 10:10:00"
+            },
+            {
+                "sender": "Support",
+                "message": "Thank you for providing the order number. What seems to be the issue?",
+                "timestamp": "2023-08-09 10:15:00"
+            },
+            {
+                "sender": "User",
+                "message": "I received a wrong item in my order.",
+                "timestamp": "2023-08-09 10:20:00"
+            },
+            {
+                "sender": "Support",
+                "message": "I apologize for the inconvenience. Can you please describe the incorrect item you received?",
+                "timestamp": "2023-08-09 10:25:00"
+            },
+            {
+                "sender": "User",
+                "message": "The item was supposed to be a blue shirt, but I received a red one instead.",
+                "timestamp": "2023-08-09 10:30:00"
+            },
+            {
+                "sender": "Support",
+                "message": "I'm sorry for the mix-up. We'll arrange for a replacement to be sent to you. Can you keep the red shirt as well?",
+                "timestamp": "2023-08-09 10:35:00"
+            },
+            {
+                "sender": "User",
+                "message": "Yes, I can keep the red shirt. Thank you!",
+                "timestamp": "2023-08-09 10:40:00"
+            },
+            {
+                "sender": "Support",
+                "message": "You're welcome! We'll process the replacement order right away. Is there anything else I can assist you with?",
+                "timestamp": "2023-08-09 10:45:00"
+            },
+            {
+                "sender": "User",
+                "message": "No, that's all. Thank you for your help!",
+                "timestamp": "2023-08-09 10:50:00"
+            }
+        ]
+    },
+    {
+        "support_type": "Refund",
+        "message_id": 123457,
+        "last_message": "The product I received is damaged. I like to return it and get a refund.",
+        "chats": [
+            {
+                "sender": "User",
+                "message": "Hello, I'd like to inquire about your product pricing.",
+                "timestamp": "2023-08-09 12:00:00"
+            },
+            {
+                "sender": "Support",
+                "message": "Of course! Please let me know which product you're interested in.",
+                "timestamp": "2023-08-09 12:05:00"
+            },
+            {
+                "sender": "User",
+                "message": "I'm looking at the premium laptop model.",
+                "timestamp": "2023-08-09 12:10:00"
+            },
+            {
+                "sender": "Support",
+                "message": "The premium laptop starts at $1500. Do you need more information about its specifications?",
+                "timestamp": "2023-08-09 12:15:00"
+            },
+            {
+                "sender": "User",
+                "message": "Yes, I'd like to know about the RAM and storage options.",
+                "timestamp": "2023-08-09 12:20:00"
+            }
+        ]
+    },
+    {
+        "support_type": "Account",
+        "message_id": 123458,
+        "last_message": "I forgot my account password. How can I reset it?",
+        "chats": [
+            {
+                "sender": "User",
+                "message": "Hi, I need help with my recent order.",
+                "timestamp": "2023-08-09 10:00:00"
+            },
+            {
+                "sender": "Support",
+                "message": "Of course! Please provide me with your order number.",
+                "timestamp": "2023-08-09 10:05:00"
+            },
+            {
+                "sender": "User",
+                "message": "My order number is 12345.",
+                "timestamp": "2023-08-09 10:10:00"
+            },
+            {
+                "sender": "Support",
+                "message": "Thank you for providing the order number. What seems to be the issue?",
+                "timestamp": "2023-08-09 10:15:00"
+            },
+            {
+                "sender": "User",
+                "message": "I received a wrong item in my order.",
+                "timestamp": "2023-08-09 10:20:00"
+            },
+            {
+                "sender": "Support",
+                "message": "I apologize for the inconvenience. Can you please describe the incorrect item you received?",
+                "timestamp": "2023-08-09 10:25:00"
+            },
+            {
+                "sender": "User",
+                "message": "The item was supposed to be a blue shirt, but I received a red one instead.",
+                "timestamp": "2023-08-09 10:30:00"
+            },
+            {
+                "sender": "Support",
+                "message": "I'm sorry for the mix-up. We'll arrange for a replacement to be sent to you. Can you keep the red shirt as well?",
+                "timestamp": "2023-08-09 10:35:00"
+            },
+            {
+                "sender": "User",
+                "message": "Yes, I can keep the red shirt. Thank you!",
+                "timestamp": "2023-08-09 10:40:00"
+            },
+            {
+                "sender": "Support",
+                "message": "You're welcome! We'll process the replacement order right away. Is there anything else I can assist you with?",
+                "timestamp": "2023-08-09 10:45:00"
+            },
+            {
+                "sender": "User",
+                "message": "No, that's all. Thank you for your help!",
+                "timestamp": "2023-08-09 10:50:00"
+            }
+        ]
+    },
+    {
+        "support_type": "Payment",
+        "message_id": 123459,
+        "last_message": "I made a payment, but the order status still shows as unpaid. What should I do?",
+        "chats": [
+            {
+                "sender": "User",
+                "message": "Hi, I need help with my recent order.",
+                "timestamp": "2023-08-09 10:00:00"
+            },
+            {
+                "sender": "Support",
+                "message": "Of course! Please provide me with your order number.",
+                "timestamp": "2023-08-09 10:05:00"
+            },
+            {
+                "sender": "User",
+                "message": "My order number is 12345.",
+                "timestamp": "2023-08-09 10:10:00"
+            },
+            {
+                "sender": "Support",
+                "message": "Thank you for providing the order number. What seems to be the issue?",
+                "timestamp": "2023-08-09 10:15:00"
+            },
+            {
+                "sender": "User",
+                "message": "I received a wrong item in my order.",
+                "timestamp": "2023-08-09 10:20:00"
+            },
+            {
+                "sender": "Support",
+                "message": "I apologize for the inconvenience. Can you please describe the incorrect item you received?",
+                "timestamp": "2023-08-09 10:25:00"
+            },
+            {
+                "sender": "User",
+                "message": "The item was supposed to be a blue shirt, but I received a red one instead.",
+                "timestamp": "2023-08-09 10:30:00"
+            },
+            {
+                "sender": "Support",
+                "message": "I'm sorry for the mix-up. We'll arrange for a replacement to be sent to you. Can you keep the red shirt as well?",
+                "timestamp": "2023-08-09 10:35:00"
+            },
+            {
+                "sender": "User",
+                "message": "Yes, I can keep the red shirt. Thank you!",
+                "timestamp": "2023-08-09 10:40:00"
+            },
+            {
+                "sender": "Support",
+                "message": "You're welcome! We'll process the replacement order right away. Is there anything else I can assist you with?",
+                "timestamp": "2023-08-09 10:45:00"
+            },
+            {
+                "sender": "User",
+                "message": "No, that's all. Thank you for your help!",
+                "timestamp": "2023-08-09 10:50:00"
+            }
+        ]
+    },
+    {
+        "support_type": "Refund",
+        "message_id": 123460,
+        "last_message": "I accidentally placed this order. Can I cancel it and get a refund?",
+        "chats": [
+            {
+                "sender": "User",
+                "message": "Hi, I'm having trouble logging into my account.",
+                "timestamp": "2023-08-09 11:00:00"
+            },
+            {
+                "sender": "Support",
+                "message": "I can help you with that. Can you provide your email address?",
+                "timestamp": "2023-08-09 11:05:00"
+            },
+            {
+                "sender": "User",
+                "message": "Sure, my email is user@example.com.",
+                "timestamp": "2023-08-09 11:10:00"
+            },
+            {
+                "sender": "Support",
+                "message": "Thank you. We've sent you a password reset link to your email.",
+                "timestamp": "2023-08-09 11:15:00"
+            }
+        ]
+    }
+]

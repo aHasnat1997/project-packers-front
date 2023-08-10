@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import SupportLeft from './SupportLeft';
-import SupportRight from './SupportRight';
+import { Outlet } from 'react-router-dom';
+import ChatProvider from '../../../context/ChatProvider';
 
 const Support = () => {
-    const [soon, setSoon] = useState(false)
+    const [soon, setSoon] = useState(false);
+
 
     return (
         soon ? <>
@@ -11,10 +13,12 @@ const Support = () => {
                 <h1 className='text-9xl font-bold text-gray-200 cursor-default prevent-select'>Coming Soon...</h1>
             </section>
         </> : <>
-            <section className='w-full flex bg-[#E2E8F0]'>
-                <aside className='border-r bg-white'><SupportLeft /></aside>
-                <aside className='w-[75%]'><SupportRight /></aside>
-            </section>
+            <ChatProvider>
+                <section className='w-full h-screen flex-1 flex bg-[#E2E8F0]'>
+                    <aside className='shrink-0 border-r bg-white'><SupportLeft /></aside>
+                    <aside className='w-full'><Outlet /></aside>
+                </section>
+            </ChatProvider>
         </>
     );
 };

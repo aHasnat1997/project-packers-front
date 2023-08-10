@@ -11,10 +11,16 @@ const DashboardMainLayout = () => {
     return (
         <main className='h-screen overflow-hidden no-scrollbar'>
             <StayTop />
-            <DDHeader />
-            <div className='flex'>
-                <DDNav />
-                <Outlet />
+            <div className='grid grid-cols-12'>
+                <div className='col-span-full'>
+                    <DDHeader />
+                </div>
+                <div className='col-span-2'>
+                    <DDNav />
+                </div>
+                <div className='col-span-10 h-[calc(100vh-77px)]'>
+                    <Outlet />
+                </div>
             </div>
         </main>
     );
