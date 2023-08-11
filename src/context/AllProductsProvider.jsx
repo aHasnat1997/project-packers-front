@@ -5,8 +5,11 @@ export const AllProductsContext = createContext(null);
 const AllProductsProvider = ({ children }) => {
   const [productData, setProductsData] = useState([]);
   useEffect(() => {
-    const options = { method: 'GET' };
-    fetch('/productsList.json', options)
+    const options = {
+      method: 'GET',
+      withCredentials: true
+    };
+    fetch(`${import.meta.env.VITE_BASE_URL}/products?page=1&limit=30`, options)
       .then(response => response.json())
       .then(response => {
         setProductsData(response)

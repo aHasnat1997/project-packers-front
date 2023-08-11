@@ -3,6 +3,8 @@
         "support_type": "Refund",
         "message_id": 123451,
         "last_message": "I would like to request a refund for my recent purchase.",
+        "user_name": "Annette Black",
+        "chat_start": "2023-08-09 10:00:00", 
         "chats": [
             {
                 "sender": "User",
@@ -65,6 +67,8 @@
         "support_type": "Account",
         "message_id": 123452,
         "last_message": "I having trouble accessing my account. Can you please assist?",
+        "user_name": "Kristin Watson",
+        "chat_start": "2023-08-09 10:00:00", 
         "chats": [
             {
                 "sender": "User",
@@ -92,6 +96,8 @@
         "support_type": "Payment",
         "message_id": 123453,
         "last_message": "There seems to be an issue with my payment processing. Need help urgently.",
+        "user_name": "Wade Warren",
+        "chat_start": "2023-08-09 10:00:00", 
         "chats": [
             {
                 "sender": "User",
@@ -154,6 +160,8 @@
         "support_type": "Refund",
         "message_id": 123454,
         "last_message": "I received the wrong item. Can I get a refund or a replacement?",
+        "user_name": "Floyd Miles",
+        "chat_start": "2023-08-09 10:00:00", 
         "chats": [
             {
                 "sender": "User",
@@ -186,6 +194,8 @@
         "support_type": "Account",
         "message_id": 123455,
         "last_message": "I need to update the email address associated with my account. How can I do that?",
+        "user_name": "Darlene Robertson",
+        "chat_start": "2023-08-09 10:00:00", 
         "chats": [
             {
                 "sender": "User",
@@ -213,6 +223,8 @@
         "support_type": "Payment",
         "message_id": 123456,
         "last_message": "My credit card was charged twice for the same order. Please help me resolve this.",
+        "user_name": "Esther Howard",
+        "chat_start": "2023-08-09 10:00:00", 
         "chats": [
             {
                 "sender": "User",
@@ -275,6 +287,8 @@
         "support_type": "Refund",
         "message_id": 123457,
         "last_message": "The product I received is damaged. I like to return it and get a refund.",
+        "user_name": "Bessie Cooper",
+        "chat_start": "2023-08-09 10:00:00", 
         "chats": [
             {
                 "sender": "User",
@@ -307,6 +321,8 @@
         "support_type": "Account",
         "message_id": 123458,
         "last_message": "I forgot my account password. How can I reset it?",
+        "user_name": "Devon Lane",
+        "chat_start": "2023-08-09 10:00:00", 
         "chats": [
             {
                 "sender": "User",
@@ -369,6 +385,8 @@
         "support_type": "Payment",
         "message_id": 123459,
         "last_message": "I made a payment, but the order status still shows as unpaid. What should I do?",
+        "user_name": "Jerome Bell",
+        "chat_start": "2023-08-09 10:00:00", 
         "chats": [
             {
                 "sender": "User",
@@ -431,6 +449,8 @@
         "support_type": "Refund",
         "message_id": 123460,
         "last_message": "I accidentally placed this order. Can I cancel it and get a refund?",
+        "user_name": "Jane Cooper",
+        "chat_start": "2023-08-09 10:00:00", 
         "chats": [
             {
                 "sender": "User",

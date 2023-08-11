@@ -15,7 +15,7 @@ const AllProductsLayout = () => {
                 <aside className='min-w-max'>
                     <LeftNav />
                 </aside>
-                <aside>
+                <aside className='w-[80%]'>
                     <AllProducts />
                 </aside>
             </section>

@@ -60,7 +60,7 @@ const AllProducts = () => {
         </thead>
         <tbody>
           {
-            productData?.map(data => <tr key={data?.id} className='hover:bg-[#FEF9DC]'>
+            productData?.docs?.map(data => <tr key={data?.id} className='hover:bg-[#FEF9DC]'>
               <td className='py-4 px-6 border-b'><input type="checkbox" /></td>
               <td className='py-4 px-6 border-b'>
                 <Link

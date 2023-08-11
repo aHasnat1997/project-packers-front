@@ -10,7 +10,7 @@ import { AllProductsContext } from '../../../context/AllProductsProvider';
 const AddProduct = () => {
   const { productData } = useContext(AllProductsContext);
   const { id } = useParams();
-  const productInfo = productData?.find(data => data?.id === id);
+  const productInfo = productData?.docs?.find(data => data?.id === id);
   // console.log(productInfo);
 
   const { register, handleSubmit, reset } = useForm();

@@ -10,6 +10,7 @@ const PasswordSymbol = React.forwardRef(({ py, placeholder, width, value, onChan
                 value={value}
                 ref={ref}
                 type="password"
+                // required={true}
                 className={`input-field bg-transparent absolute top-0 z-10 w-${width} opacity-0 py-${py}`}
                 onChange={(event) => {
                     const passValue = event.target.value;

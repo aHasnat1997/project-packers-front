@@ -32,7 +32,7 @@ export default {
         'spin-slow': 'spin 3s linear infinite',
         wiggle: 'wiggle 1s ease-in-out infinite',
         bounce: 'bounce 1s ease-in-out infinite',
-        send: 'send 2s linear infinite'
+        send: 'send .5s linear infinite'
       },
 
       keyframes: {
